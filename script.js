@@ -30,6 +30,8 @@ if (form) {
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
+    form.classList.add("form-attempted");
+
     if (!form.checkValidity()) {
   if (message) {
     message.textContent =
