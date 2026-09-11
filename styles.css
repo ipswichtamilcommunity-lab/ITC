@@ -957,3 +957,35 @@ p {
     margin-top: 0 !important;
   }
 }
+.gallery-cta {
+  background: #7f203d;
+  color: #ffffff;
+  padding: 42px 32px;
+  border-radius: 28px;
+  margin: 20px auto;
+}
+
+.gallery-cta .eyebrow {
+  color: #ffffff;
+}
+
+.gallery-cta h2 {
+  color: #ffffff;
+  margin: 12px 0 24px;
+}
+
+.gallery-cta > p:not(.eyebrow) {
+  color: #ffffff;
+  line-height: 1.7;
+}
+
+.gallery-cta .button {
+  display: inline-block;
+  margin-top: 24px;
+  background: #ffffff;
+  color: #7f203d;
+  padding: 14px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
