@@ -34,11 +34,12 @@ if (form) {
     }
   }
 
-  if (adults && children) {
-    adults.addEventListener("input", syncTotal);
-    children.addEventListener("input", syncTotal);
-    syncTotal();
-  }
+if (adults && children && underFive) {
+  adults.addEventListener("input", syncTotal);
+  children.addEventListener("input", syncTotal);
+  underFive.addEventListener("input", syncTotal);
+  syncTotal();
+}
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
