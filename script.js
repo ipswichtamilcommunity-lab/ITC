@@ -95,18 +95,17 @@ if (form) {
     }
 
     try {
-      const formData = new FormData(form);
-      const data = new URLSearchParams(formData);
+      
+const formData = new FormData(form);
 
-      await fetch(
-        "https://script.google.com/macros/s/AKfycbwJC9UXWnsOVBggPfB5X8dEju5996jCMXNDQHCM5G-yUgSooSdzaJ-1N_eGXr9KRVzY/exec",
-        {
-          method: "POST",
-          mode: "no-cors",
-          body: data
-        }
-      );
-
+await fetch(
+  "https://script.google.com/macros/s/AKfycbwJC9UXWnsOVBggPfB5X8dEju5996jCMXNDQHCM5G-yUgSooSdzaJ-1N_eGXr9KRVzY/exec",
+  {
+    method: "POST",
+    mode: "no-cors",
+    body: formData
+  }
+);
       if (message) {
         message.style.color = "";
 
