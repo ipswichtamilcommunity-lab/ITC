@@ -937,9 +937,10 @@ p {
 
 @media (max-width: 620px) {
   .page-hero {
-    padding: 35px 28px 5px !important;
-    min-height: auto !important;
-  }
+  padding-top: 35px !important;
+  padding-bottom: 5px !important;
+  min-height: auto !important;
+}
 
   .diwali-event-page {
     padding-top: 0 !important;
