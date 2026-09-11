@@ -1116,6 +1116,6 @@ p {
 }
 @media (max-width: 620px) {
   .site-header .brand {
-    font-size: 1.35rem !important;
+    font-size: 1.20rem !important;
   }
 }
