@@ -755,3 +755,63 @@ p {
     padding: 28px 20px;
   }
 }
+.menu-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  font-size: 2rem;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+@media (max-width: 620px) {
+  .site-header {
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+  }
+
+  .brand {
+    max-width: 75%;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 10px 20px 18px;
+    background: #fffaf5;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.08);
+    overflow: visible;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .main-nav a {
+    padding: 13px 4px;
+    border-bottom: 1px solid var(--border);
+    font-size: 1rem;
+  }
+
+  .main-nav a:last-child {
+    border-bottom: 0;
+  }
+
+  .main-nav a.active::after {
+    display: none;
+  }
+}
