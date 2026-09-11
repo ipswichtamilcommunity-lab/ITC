@@ -55,7 +55,25 @@ if (form) {
   return;
 }
 
-    syncTotal();
+    function syncTotal() {
+  const adultCount = Number(adults?.value || 0);
+  const childCount = Number(children?.value || 0);
+
+  if (total) {
+    total.value = adultCount + childCount;
+  }
+
+  const ticketTotal =
+    document.getElementById("ticket-total");
+
+  const amount =
+    (adultCount * 23) +
+    (childCount * 10);
+
+  if (ticketTotal) {
+    ticketTotal.value = `£${amount}`;
+  }
+}
 
     if (submitButton) {
       submitButton.disabled = true;
