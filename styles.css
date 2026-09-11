@@ -866,3 +866,8 @@ p {
 .whatsapp-button:hover {
   opacity: 0.9;
 }
+
+.success-message {
+  margin-top: 28px;
+  margin-bottom: 24px;
+}
