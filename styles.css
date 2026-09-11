@@ -931,3 +931,6 @@ p {
   font-weight: 600;
   color: #555;
 }
+.ticket-price-note {
+  line-height: 1.6;
+}
