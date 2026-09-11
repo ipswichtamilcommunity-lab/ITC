@@ -284,7 +284,82 @@
               ></textarea>
             </div>
 
+            <div class="form-group">
+  <label>
+    Would anyone like to join the Fashion Show?
+  </label>
 
+  <div class="radio-group">
+
+    <label>
+      <input
+        type="radio"
+        name="fashionShow"
+        value="yes"
+      />
+      Yes
+    </label>
+
+    <label>
+      <input
+        type="radio"
+        name="fashionShow"
+        value="no"
+        checked
+      />
+      No
+    </label>
+
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="fashion-show-details">
+    Fashion Show details
+  </label>
+
+  <textarea
+    id="fashion-show-details"
+    name="fashionShowDetails"
+    rows="3"
+    placeholder="Participant name and age"
+  ></textarea>
+</div>
+
+            <div class="form-group">
+  <label>
+    Photo / Video Consent *
+  </label>
+
+  <p class="form-help">
+    Photos and videos may be taken during the event and used for Ipswich Tamil Community updates and event promotion.
+  </p>
+
+  <div class="radio-group">
+
+    <label>
+      <input
+        type="radio"
+        name="photoConsent"
+        value="yes"
+        required
+      />
+      Yes, I consent
+    </label>
+
+    <label>
+      <input
+        type="radio"
+        name="photoConsent"
+        value="no"
+        required
+      />
+      No, I do not consent
+    </label>
+
+  </div>
+</div>
+  
             <button
               class="button button-primary form-button"
               type="submit"
