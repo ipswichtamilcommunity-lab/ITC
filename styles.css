@@ -1012,3 +1012,21 @@ p {
   text-decoration: none;
   font-weight: 700;
 }
+/* Gallery years section */
+.gallery-years-section {
+  padding-top: 10px !important;
+}
+
+.gallery-years-section .gallery-year h2 {
+  font-family: "DM Sans", Arial, sans-serif !important;
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: #7f203d !important;
+  margin: 0 0 18px !important;
+}
+
+@media (max-width: 620px) {
+  .gallery-years-section {
+    padding-top: 0 !important;
+  }
+}
