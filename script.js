@@ -7,6 +7,7 @@ const form = document.getElementById("registration-form");
 if (form) {
   const adults = form.elements.adults;
   const children = form.elements.children;
+  const underFive = form.elements.underFive;
   const total = form.elements.total;
 
   const submitButton = form.querySelector('button[type="submit"]');
