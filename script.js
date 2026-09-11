@@ -108,6 +108,7 @@ if (adults && children && underFive) {
     try {
       
 const formData = new FormData(form);
+formData.set("amountToPay", amountToPay);
 
 await fetch(
   "https://script.google.com/macros/s/AKfycbwJC9UXWnsOVBggPfB5X8dEju5996jCMXNDQHCM5G-yUgSooSdzaJ-1N_eGXr9KRVzY/exec",
