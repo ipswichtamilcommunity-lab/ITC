@@ -815,3 +815,14 @@ p {
     display: none;
   }
 }
+.form-attempted input:invalid,
+.form-attempted textarea:invalid,
+.form-attempted select:invalid {
+  border-color: #b42318;
+}
+
+.form-attempted input:focus:invalid,
+.form-attempted textarea:focus:invalid,
+.form-attempted select:focus:invalid {
+  outline: 2px solid rgba(180, 35, 24, 0.15);
+}
