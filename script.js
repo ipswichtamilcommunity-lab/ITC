@@ -278,3 +278,20 @@ if (menuToggle && mainNav) {
     margin-bottom: 28px;
   }
 }
+/* Gallery spacing and year font */
+.page-hero + .section {
+  padding-top: 20px;
+}
+
+.gallery-year {
+  margin-top: 0 !important;
+  margin-bottom: 32px !important;
+}
+
+.gallery-year h2 {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: #7f203d !important;
+  margin: 0 0 18px !important;
+}
