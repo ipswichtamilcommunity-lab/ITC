@@ -1098,3 +1098,15 @@ p {
     padding-top: 10px !important;
   }
 }
+/* Space between gallery years */
+.gallery-years-section .gallery-year + .gallery-year {
+  margin-top: 28px !important;
+}
+
+/* Larger mobile website header */
+@media (max-width: 620px) {
+  .brand {
+    font-size: 1.35rem !important;
+    line-height: 1.2;
+  }
+}
