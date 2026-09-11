@@ -1,36 +1,33 @@
 // ===============================
-// DIWALI REGISTRATION FORM
+// DIWALI 2026 REGISTRATION FORM
 // ===============================
 
-const form =
-  document.getElementById("registration-form") ||
-  document.getElementById("registrationForm");
+const form = document.getElementById("registration-form");
 
 if (form) {
-  const message =
-    document.getElementById("form-message") ||
-    document.getElementById("formMessage");
-
   const adults = form.elements.adults;
   const children = form.elements.children;
   const total = form.elements.total;
 
+  const submitButton = form.querySelector('button[type="submit"]');
+  const message = form.querySelector(".form-note");
+
   function syncTotal() {
-    if (!adults || !children || !total) return;
+    const adultCount = Number(adults?.value || 0);
+    const childCount = Number(children?.value || 0);
 
-    const a = Number(adults.value || 0);
-    const c = Number(children.value || 0);
-
-    total.value = Math.max(1, a + c);
+    if (total) {
+      total.value = adultCount + childCount;
+    }
   }
 
-  if (adults && children && total) {
+  if (adults && children) {
     adults.addEventListener("input", syncTotal);
     children.addEventListener("input", syncTotal);
     syncTotal();
   }
 
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     if (!form.checkValidity()) {
@@ -38,18 +35,55 @@ if (form) {
       return;
     }
 
-    const nameField =
-      form.elements.fullName ||
-      document.getElementById("full-name");
+    syncTotal();
 
-    const name = nameField ? nameField.value.trim() : "";
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = "Submitting...";
+    }
 
     if (message) {
-      message.textContent =
-        `Thank you${name ? ", " + name : ""}! ` +
-        "Your registration details are ready to be submitted.";
+      message.textContent = "Submitting your registration...";
+    }
 
-      message.style.color = "#18794e";
+    try {
+      const formData = new FormData(form);
+      const data = new URLSearchParams(formData);
+
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbwJC9UXWnsOVBggPfB5X8dEju5996jCMXNDQHCM5G-yUgSooSdzaJ-1N_eGXr9KRVzY/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          body: data
+        }
+      );
+
+      if (message) {
+        message.textContent =
+          "✅ Thank you! Your Diwali 2026 registration has been submitted.";
+      }
+
+      form.reset();
+
+      if (adults) adults.value = 1;
+      if (children) children.value = 0;
+
+      syncTotal();
+
+    } catch (error) {
+      console.error("Registration error:", error);
+
+      if (message) {
+        message.textContent =
+          "❌ Something went wrong. Please try again.";
+      }
+
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = "Register for Diwali 2026";
+      }
     }
   });
 }
