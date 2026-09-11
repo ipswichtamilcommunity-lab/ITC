@@ -143,6 +143,11 @@ await fetch(
               'Join WhatsApp Group →' +
             '</a>' +
           '</div>';
+
+        message.scrollIntoView({
+  behavior: "smooth",
+  block: "start"
+});
       }
 
       form.reset();
