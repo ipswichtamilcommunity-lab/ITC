@@ -169,6 +169,7 @@ await fetch(
 
       if (adults) adults.value = 1;
       if (children) children.value = 0;
+      if (underFive) underFive.value = 0;
 
       syncTotal();
 
