@@ -1080,3 +1080,11 @@ p {
   transform: translateY(-2px);
   transition: 0.2s ease;
 }
+/* Reduce space below gallery albums */
+.gallery-years-section {
+  padding-bottom: 20px !important;
+}
+
+.gallery-years-section .gallery-year:last-child {
+  margin-bottom: 0 !important;
+}
