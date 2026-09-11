@@ -28,6 +28,14 @@ if (form) {
     const amount =
       (adultCount * 23) +
       (childCount * 10);
+    
+const amountToPayField =
+  document.getElementById("amount-to-pay");
+
+if (amountToPayField) {
+  amountToPayField.value = amount;
+}
+    
 
     if (ticketTotal) {
       ticketTotal.value = `£${amount}`;
