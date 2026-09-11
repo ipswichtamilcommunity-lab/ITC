@@ -644,3 +644,114 @@ p {
     min-height: 170px;
   }
 }
+
+/* MOBILE HOMEPAGE FIXES */
+@media (max-width: 620px) {
+
+  .site-header {
+    padding: 16px 20px;
+    position: static;
+  }
+
+  .brand {
+    font-size: 1.15rem;
+    white-space: normal;
+  }
+
+  .main-nav {
+    display: flex;
+    overflow-x: auto;
+    gap: 18px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    width: 100%;
+  }
+
+  .main-nav a {
+    font-size: 0.9rem;
+    flex: 0 0 auto;
+  }
+
+  .home-hero {
+    min-height: auto;
+    padding: 34px 0 30px;
+    gap: 28px;
+  }
+
+  .home-hero-content h1 {
+    font-size: 3rem;
+    line-height: 0.98;
+    margin-bottom: 22px;
+  }
+
+  .hero-tagline {
+    font-size: 1.15rem;
+    line-height: 1.5;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    gap: 12px;
+  }
+
+  .hero-buttons .button {
+    width: 100%;
+    min-height: 50px;
+    font-size: 1rem;
+  }
+
+  .home-hero-card {
+    padding: 28px 22px;
+    text-align: center;
+  }
+
+  .home-hero-card h2 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+  }
+
+  .hero-icon {
+    font-size: 3rem;
+  }
+
+  .section-heading h2 {
+    font-size: 2rem;
+  }
+
+  .section-heading p {
+    font-size: 1rem;
+  }
+
+  .feature-card,
+  .year-preview-card,
+  .photo-card,
+  .gallery-card,
+  .contact-card,
+  .event-card-content {
+    padding: 22px;
+  }
+
+  .year-preview-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .diwali-preview-card,
+  .callout-card,
+  .contact-highlight {
+    padding: 24px;
+  }
+
+  .diwali-preview-card h2,
+  .callout-card h2,
+  .contact-highlight h2 {
+    font-size: 2rem;
+  }
+
+  .site-footer {
+    padding: 28px 20px;
+  }
+}
