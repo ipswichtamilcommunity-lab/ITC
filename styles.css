@@ -826,3 +826,43 @@ p {
 .form-attempted select:focus:invalid {
   outline: 2px solid rgba(180, 35, 24, 0.15);
 }
+
+.success-message {
+  margin-bottom: 20px;
+  color: #18794e;
+  line-height: 1.6;
+}
+
+.whatsapp-box {
+  margin-top: 18px;
+  padding: 22px;
+  border: 2px solid #25d366;
+  border-radius: 16px;
+  background: #f0fff5;
+  text-align: center;
+  color: #173b27;
+}
+
+.whatsapp-box strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.whatsapp-box p {
+  margin: 6px 0 16px;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  padding: 13px 22px;
+  background: #25d366;
+  color: #ffffff !important;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.whatsapp-button:hover {
+  opacity: 0.9;
+}
