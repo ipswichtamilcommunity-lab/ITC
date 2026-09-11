@@ -134,7 +134,7 @@
               <input
                 type="text"
                 id="full-name"
-                name="full-name"
+                name="fullName"
                 required
               />
             </div>
@@ -190,6 +190,12 @@
 
             </div>
 
+            <input
+  type="hidden"
+  id="total"
+  name="total"
+/>
+
 
             <div class="form-group">
               <label for="children-details">
@@ -198,7 +204,7 @@
 
               <textarea
                 id="children-details"
-                name="children-details"
+                name="childrenDetails"
                 rows="4"
                 placeholder="Example: Anya - 10, Riya - 7"
               ></textarea>
@@ -223,7 +229,7 @@
                 <input
                   type="number"
                   id="non-vegetarian"
-                  name="non-vegetarian"
+                  name="nonVegetarian"
                   min="0"
                   value="0"
                 />
@@ -245,7 +251,7 @@
                 <label>
                   <input
                     type="radio"
-                    name="performance"
+                    name="culturalPerformance"
                     value="yes"
                   />
                   Yes
@@ -254,7 +260,7 @@
                 <label>
                   <input
                     type="radio"
-                    name="performance"
+                    name="culturalPerformance"
                     value="no"
                     checked
                   />
@@ -272,7 +278,7 @@
 
               <textarea
                 id="performance-details"
-                name="performance-details"
+                name="PerformanceDetails"
                 rows="3"
                 placeholder="Participant name, age and performance type"
               ></textarea>
