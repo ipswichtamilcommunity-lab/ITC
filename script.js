@@ -143,10 +143,14 @@ await fetch(
               'Join WhatsApp Group →' +
             '</a>' +
           '</div>';
+const messageTop =
+  message.getBoundingClientRect().top +
+  window.pageYOffset -
+  20;
 
-        message.scrollIntoView({
-  behavior: "smooth",
-  block: "start"
+window.scrollTo({
+  top: messageTop,
+  behavior: "smooth"
 });
       }
 
