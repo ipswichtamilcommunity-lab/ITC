@@ -95,6 +95,14 @@ if (form) {
           mode: "no-cors",
           body: data
         }
+        const adultCount = Number(adults?.value || 0);
+const childCount = Number(children?.value || 0);
+const amountToPay = (adultCount * 23) + (childCount * 10);
+
+const nameField = form.elements.fullName;
+const paymentReference = nameField
+  ? nameField.value.trim()
+  : "";
       );
 
       if (message) {
@@ -102,6 +110,18 @@ if (form) {
     '<div class="success-message">' +
       '<strong>✅ Registration Successful!</strong><br>' +
       'Thank you! Your Diwali 2026 registration has been submitted.' +
+    '</div>' +
+
+    '<div class="payment-box">' +
+      '<strong>💳 Payment Details</strong>' +
+      '<div class="amount-to-pay">Total to pay: £' + amountToPay + '</div>' +
+      '<p><strong>Account name:</strong> Indumathy Arun Sagar</p>' +
+      '<p><strong>Sort code:</strong> 04-00-03</p>' +
+      '<p><strong>Account number:</strong> 88571712</p>' +
+      '<p><strong>Payment reference:</strong> ' +
+        (paymentReference || 'Your full name') +
+      '</p>' +
+      '<p>Please make the payment to confirm your registration.</p>' +
     '</div>' +
 
     '<div class="whatsapp-box">' +
