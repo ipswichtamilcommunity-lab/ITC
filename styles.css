@@ -1042,3 +1042,41 @@ p {
   margin-top: 4px;
   margin-bottom: 4px;
 }
+/* Gallery album cards */
+.gallery-years-section .gallery-album {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #fff7f4;
+  border: 1px solid #ead8d2;
+  border-radius: 20px;
+  padding: 18px 20px;
+  margin-top: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery-years-section .gallery-album-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.gallery-years-section .gallery-album h3 {
+  font-family: "DM Sans", Arial, sans-serif !important;
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+  color: #7f203d !important;
+  margin: 0 0 6px !important;
+}
+
+.gallery-years-section .gallery-album p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.gallery-years-section .gallery-album:hover {
+  transform: translateY(-2px);
+  transition: 0.2s ease;
+}
