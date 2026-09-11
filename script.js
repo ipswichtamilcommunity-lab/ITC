@@ -16,9 +16,10 @@ if (form) {
   function syncTotal() {
     const adultCount = Number(adults?.value || 0);
     const childCount = Number(children?.value || 0);
+    const underFiveCount = Number(underFive?.value || 0);
 
     if (total) {
-      total.value = adultCount + childCount;
+      total.value = adultCount + childCount + underFiveCount;
     }
 
     const ticketTotal =
