@@ -89,10 +89,12 @@ if (form) {
 
       form.reset();
 
-      if (adults) adults.value = 1;
-      if (children) children.value = 0;
+form.classList.remove("form-attempted");
 
-      syncTotal();
+if (adults) adults.value = 1;
+if (children) children.value = 0;
+
+syncTotal();
 
     } catch (error) {
       console.error("Registration error:", error);
