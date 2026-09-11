@@ -245,3 +245,36 @@ if (menuToggle && mainNav) {
       });
     });
 }
+
+/* Gallery year styling */
+.gallery-year {
+  margin-top: 28px;
+  margin-bottom: 35px;
+}
+
+.gallery-year h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #7f203d;
+  margin: 0 0 18px;
+}
+
+.gallery-album {
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery-album h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  color: #7f203d;
+  margin: 8px 0;
+}
+
+@media (max-width: 620px) {
+  .gallery-year {
+    margin-top: 18px;
+    margin-bottom: 28px;
+  }
+}
