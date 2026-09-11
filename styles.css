@@ -1030,3 +1030,15 @@ p {
     padding-top: 0 !important;
   }
 }
+.gallery-years-section .gallery-album h3 {
+  font-family: "DM Sans", Arial, sans-serif !important;
+  font-size: 1.45rem !important;
+  font-weight: 700 !important;
+  color: #7f203d !important;
+  margin: 8px 0 10px !important;
+}
+
+.gallery-years-section .gallery-album-icon {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
