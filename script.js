@@ -143,18 +143,24 @@ await fetch(
               'Join WhatsApp Group →' +
             '</a>' +
           '</div>';
-const messageTop =
-  message.getBoundingClientRect().top +
-  window.pageYOffset -
-  20;
 
-window.scrollTo({
-  top: messageTop,
-  behavior: "smooth"
-});
       }
 
       form.reset();
+
+      setTimeout(() => {
+  if (message) {
+    const messageTop =
+      message.getBoundingClientRect().top +
+      window.scrollY -
+      20;
+
+    window.scrollTo({
+      top: messageTop,
+      behavior: "smooth"
+    });
+  }
+}, 200);
 
       form.classList.remove("form-attempted");
 
