@@ -871,3 +871,34 @@ p {
   margin-top: 28px;
   margin-bottom: 24px;
 }
+.payment-box {
+  margin-top: 20px;
+  margin-bottom: 22px;
+  padding: 22px;
+  border: 2px solid #d9a441;
+  border-radius: 16px;
+  background: #fffaf0;
+  color: #2f2a2a;
+}
+
+.payment-box > strong {
+  display: block;
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+
+.amount-to-pay {
+  margin: 14px 0 18px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #7b1e3a;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.payment-box p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
