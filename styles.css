@@ -944,11 +944,10 @@ p {
   }
 
   .page-hero h1 {
-    font-size: 3.1rem !important;
-    line-height: 1.08 !important;
-    max-width: 100% !important;
-  }
-
+  font-size: 2.55rem !important;
+  line-height: 1.08 !important;
+  max-width: 100% !important;
+}
   .diwali-event-page {
     padding-top: 0 !important;
     margin-top: 0 !important;
