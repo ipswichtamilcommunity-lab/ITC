@@ -934,3 +934,13 @@ p {
 .ticket-price-note {
   line-height: 1.6;
 }
+
+@media (max-width: 620px) {
+  .page-hero {
+    padding-bottom: 30px;
+  }
+
+  .diwali-event-page {
+    padding-top: 20px;
+  }
+}
