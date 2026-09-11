@@ -958,34 +958,26 @@ p {
   }
 }
 .gallery-cta {
-  background: #7f203d;
-  color: #ffffff;
-  padding: 42px 32px;
-  border-radius: 28px;
-  margin: 20px auto;
+  background: #7f203d !important;
+  color: #ffffff !important;
+  padding: 42px 32px !important;
+  border-radius: 28px !important;
+  margin: 20px auto !important;
 }
 
-.gallery-cta .eyebrow {
-  color: #ffffff;
-}
-
-.gallery-cta h2 {
-  color: #ffffff;
-  margin: 12px 0 24px;
-}
-
-.gallery-cta > p:not(.eyebrow) {
-  color: #ffffff;
-  line-height: 1.7;
+.gallery-cta .eyebrow,
+.gallery-cta h2,
+.gallery-cta p {
+  color: #ffffff !important;
 }
 
 .gallery-cta .button {
-  display: inline-block;
-  margin-top: 24px;
-  background: #ffffff;
-  color: #7f203d;
-  padding: 14px 24px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 700;
+  display: inline-block !important;
+  margin-top: 24px !important;
+  background: #ffffff !important;
+  color: #7f203d !important;
+  padding: 14px 24px !important;
+  border-radius: 999px !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
 }
