@@ -1110,3 +1110,12 @@ p {
     line-height: 1.2;
   }
 }
+/* Space between gallery years */
+.gallery-years-section .gallery-year + .gallery-year {
+  margin-top: 45px !important;
+}
+@media (max-width: 620px) {
+  .site-header .brand {
+    font-size: 1.35rem !important;
+  }
+}
