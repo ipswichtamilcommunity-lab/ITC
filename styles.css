@@ -942,8 +942,9 @@ p {
   }
 
   .diwali-event-page {
-    padding-top: 10px !important;
-  }
+  padding-top: 0 !important;
+  margin-top: -25px !important;
+}
 
   .event-page-grid {
     gap: 20px !important;
