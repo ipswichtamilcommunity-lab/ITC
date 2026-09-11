@@ -31,9 +31,27 @@ if (form) {
     event.preventDefault();
 
     if (!form.checkValidity()) {
-      form.reportValidity();
-      return;
-    }
+  if (message) {
+    message.textContent =
+      "❌ Please complete all mandatory fields marked with * before submitting.";
+    message.style.color = "#b42318";
+  }
+
+  form.reportValidity();
+
+  const firstInvalidField = form.querySelector(":invalid");
+
+  if (firstInvalidField) {
+    firstInvalidField.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+
+    firstInvalidField.focus();
+  }
+
+  return;
+}
 
     syncTotal();
 
