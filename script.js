@@ -81,11 +81,21 @@ if (form) {
 
       if (message) {
   message.innerHTML =
-    '✅ Thank you! Your Diwali 2026 registration has been submitted.<br><br>' +
-    'Please join our WhatsApp group for event updates: ' +
-    '<a href="https://chat.whatsapp.com/JsBXXoKezpjDxWF7bLFXHq" ' +
-    'target="_blank" rel="noopener noreferrer"><strong>Join WhatsApp Group</strong></a>';
-      }
+    '<div class="success-message">' +
+      '<strong>✅ Registration Successful!</strong><br>' +
+      'Thank you! Your Diwali 2026 registration has been submitted.' +
+    '</div>' +
+
+    '<div class="whatsapp-box">' +
+      '<strong>📱 Don’t miss important event updates!</strong>' +
+      '<p>Please join our Diwali 2026 WhatsApp group.</p>' +
+      '<a class="whatsapp-button" ' +
+      'href="https://chat.whatsapp.com/JsBXXoKezpjDxWF7bLFXHq" ' +
+      'target="_blank" rel="noopener noreferrer">' +
+      'Join WhatsApp Group →' +
+      '</a>' +
+    '</div>';
+}
 
       form.reset();
 
