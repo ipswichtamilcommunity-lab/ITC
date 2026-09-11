@@ -80,8 +80,11 @@ if (form) {
       );
 
       if (message) {
-        message.textContent =
-          "✅ Thank you! Your Diwali 2026 registration has been submitted.";
+  message.innerHTML =
+    '✅ Thank you! Your Diwali 2026 registration has been submitted.<br><br>' +
+    'Please join our WhatsApp group for event updates: ' +
+    '<a href="https://chat.whatsapp.com/JsBXXoKezpjDxWF7bLFXHq" ' +
+    'target="_blank" rel="noopener noreferrer"><strong>Join WhatsApp Group</strong></a>';
       }
 
       form.reset();
