@@ -1154,12 +1154,21 @@ p {
   }
 }
 /* Reduce gap between Contact intro and contact cards */
+/* Reduce gap between Contact intro and contact cards */
 .page-hero + .contact-page {
-  padding-top: 20px !important;
+  padding-top: 0 !important;
+}
+
+.page-hero:has(+ .contact-page) {
+  padding-bottom: 0 !important;
 }
 
 @media (max-width: 620px) {
   .page-hero + .contact-page {
-    padding-top: 10px !important;
+    padding-top: 0 !important;
+  }
+
+  .page-hero:has(+ .contact-page) {
+    padding-bottom: 0 !important;
   }
 }
