@@ -1220,10 +1220,11 @@ p {
   }
 
   .home-hero-content h1 {
-     font-size: 48px;
-    line-height: 1.02;
-    text-align: left;
-  }
+  font-size: 38px !important;
+  line-height: 1.05 !important;
+  text-align: left !important;
+  margin-bottom: 20px !important;
+}
 
   .hero-tagline {
     font-size: 1.18rem !important;
