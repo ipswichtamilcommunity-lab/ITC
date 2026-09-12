@@ -1172,3 +1172,39 @@ p {
     padding-bottom: 0 !important;
   }
 }
+/* Compact Celebrations page on mobile */
+@media (max-width: 620px) {
+
+  .celebration-year {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+  }
+
+  .celebration-year + .celebration-year {
+    padding-top: 15px !important;
+  }
+
+  .year-heading {
+    margin-bottom: 18px !important;
+  }
+
+  .event-image-placeholder {
+    min-height: 120px !important;
+  }
+
+  .event-card-content {
+    padding: 20px !important;
+  }
+
+  .event-card-content h3 {
+    margin-bottom: 10px !important;
+  }
+
+  .event-card-content p {
+    margin-bottom: 12px !important;
+  }
+
+  .celebration-grid {
+    gap: 16px !important;
+  }
+}
