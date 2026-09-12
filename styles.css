@@ -1147,8 +1147,8 @@ p {
 
 @media (max-width: 620px) {
   .gallery-photo-section + .section {
-    padding-top: 25px !important;
-    padding-bottom: 25px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
 
   .gallery-photo-section + .section + .site-footer {
