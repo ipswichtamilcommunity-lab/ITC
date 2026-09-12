@@ -14,38 +14,44 @@
     rel="stylesheet"
   />
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=110" />
 </head>
 
 <body>
 
   <header class="site-header">
-  <a class="brand" href="index.html">
-    Ipswich Tamil Community
-  </a>
+    <a class="brand" href="index.html">
+      Ipswich Tamil Community
+    </a>
 
-  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-    ☰
-  </button>
+    <button
+      class="menu-toggle"
+      aria-label="Open menu"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
 
-  <nav class="main-nav">
-    <a href="index.html">Home</a>
-    <a href="celebrations.html">Celebrations</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="diwali-2026.html">Diwali 2026</a>
-    <a class="active" href="contact.html">Contact</a>
-  </nav>
-</header>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="celebrations.html">Celebrations</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="diwali-2026.html">Diwali 2026</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
 
   <main>
 
     <section class="page-hero">
       <p class="eyebrow">GET IN TOUCH</p>
+
       <h1>Contact Ipswich Tamil Community</h1>
 
       <p>
-        We'd love to hear from you. Stay connected for community events,
-        celebrations and future activities.
+        We'd love to hear from you. Get in touch with us about community
+        events, celebrations, activities or anything else you'd like to share.
       </p>
     </section>
 
@@ -55,17 +61,39 @@
       <div class="contact-grid">
 
         <div class="contact-card">
-          <div class="contact-icon">💬</div>
+          <div class="contact-icon">✉️</div>
 
-          <h2>Community Enquiries</h2>
+          <h2>Email Us</h2>
 
           <p>
-            Have a question about Ipswich Tamil Community, upcoming events or
-            getting involved?
+            For community enquiries, events or general information,
+            please email us.
           </p>
 
           <p>
-            Contact details can be added here.
+            <a
+              class="text-link"
+              href="mailto:ipswichtamilcommunity@gmail.com"
+            >
+              ipswichtamilcommunity@gmail.com
+            </a>
+          </p>
+        </div>
+
+
+        <div class="contact-card">
+          <div class="contact-icon">💬</div>
+
+          <h2>Share Your Feedback</h2>
+
+          <p>
+            Your ideas and feedback help us improve our community events
+            and activities.
+          </p>
+
+          <p>
+            Use the feedback form below to send us your comments or
+            suggestions.
           </p>
         </div>
 
@@ -76,22 +104,90 @@
           <h2>Events & Celebrations</h2>
 
           <p>
-            For questions about upcoming celebrations, performances or
-            registrations, please get in touch with the community organisers.
+            Have a question about an upcoming celebration, performance
+            or registration? We're happy to help.
           </p>
         </div>
 
+      </div>
 
-        <div class="contact-card">
-          <div class="contact-icon">📱</div>
 
-          <h2>Follow Our Updates</h2>
+      <div class="registration-card feedback-card">
 
-          <p>
-            Social media and community group links can be added here so
-            families can easily stay updated.
-          </p>
-        </div>
+        <p class="eyebrow">WE'D LOVE TO HEAR FROM YOU</p>
+
+        <h2>Feedback Form</h2>
+
+        <p class="registration-intro">
+          Send us your feedback, suggestions or questions using the form below.
+        </p>
+
+
+        <form id="feedbackForm">
+
+          <div class="form-group">
+            <label for="feedbackName">
+              Name *
+            </label>
+
+            <input
+              type="text"
+              id="feedbackName"
+              name="name"
+              required
+            />
+          </div>
+
+
+          <div class="form-group">
+            <label for="feedbackEmail">
+              Email Address *
+            </label>
+
+            <input
+              type="email"
+              id="feedbackEmail"
+              name="email"
+              required
+            />
+          </div>
+
+
+          <div class="form-group">
+            <label for="feedbackSubject">
+              Subject
+            </label>
+
+            <input
+              type="text"
+              id="feedbackSubject"
+              name="subject"
+            />
+          </div>
+
+
+          <div class="form-group">
+            <label for="feedbackMessage">
+              Feedback / Message *
+            </label>
+
+            <textarea
+              id="feedbackMessage"
+              name="message"
+              rows="6"
+              required
+            ></textarea>
+          </div>
+
+
+          <button
+            type="submit"
+            class="button button-primary form-button"
+          >
+            Send Feedback
+          </button>
+
+        </form>
 
       </div>
 
@@ -100,6 +196,7 @@
 
         <div>
           <p class="eyebrow">UPCOMING EVENT</p>
+
           <h2>Looking for Diwali 2026?</h2>
 
           <p>
@@ -108,7 +205,10 @@
           </p>
         </div>
 
-        <a class="button button-primary" href="diwali-2026.html">
+        <a
+          class="button button-primary"
+          href="diwali-2026.html"
+        >
           Diwali 2026 Registration
         </a>
 
@@ -126,6 +226,9 @@
       Celebrating culture • Connecting families • Building community
     </p>
   </footer>
+
+
+  <script src="script.js"></script>
 
 </body>
 </html>
