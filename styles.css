@@ -1129,3 +1129,12 @@ p {
     padding-top: 15px !important;
   }
 }
+.gallery-photo-section {
+  padding-top: 20px !important;
+}
+
+@media (max-width: 620px) {
+  .gallery-photo-section {
+    padding-top: 10px !important;
+  }
+}
