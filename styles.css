@@ -1119,3 +1119,13 @@ p {
     font-size: 1.20rem !important;
   }
 }
+/* Reduce gap before photos on gallery photo pages only */
+.section:has(.photo-grid) {
+  padding-top: 25px !important;
+}
+
+@media (max-width: 620px) {
+  .section:has(.photo-grid) {
+    padding-top: 15px !important;
+  }
+}
