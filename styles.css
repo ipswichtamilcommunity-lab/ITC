@@ -1211,29 +1211,30 @@ p {
     gap: 12px !important;
   }
 }
-/* Home page - compact mobile hero */
+/* Home page - balanced mobile hero */
 @media (max-width: 620px) {
 
   .home-hero {
-    padding: 38px 28px 30px !important;
-    gap: 28px !important;
+    padding: 42px 28px 34px !important;
+    gap: 32px !important;
   }
 
   .home-hero-content h1 {
-    font-size: 3.15rem !important;
-    line-height: 0.98 !important;
+    font-size: 2.65rem !important;
+    line-height: 1.05 !important;
     margin-bottom: 22px !important;
+    max-width: 100% !important;
   }
 
   .hero-tagline {
-    font-size: 1.25rem !important;
+    font-size: 1.18rem !important;
     line-height: 1.45 !important;
-    margin-bottom: 18px !important;
+    margin-bottom: 16px !important;
   }
 
   .hero-text {
     font-size: 1rem !important;
-    line-height: 1.7 !important;
+    line-height: 1.65 !important;
     margin-bottom: 24px !important;
   }
 
@@ -1242,10 +1243,10 @@ p {
   }
 
   .hero-buttons .button {
-    padding: 13px 20px !important;
+    padding: 14px 20px !important;
   }
 
   .home-hero-card {
-    padding: 25px 20px !important;
+    padding: 26px 22px !important;
   }
 }
