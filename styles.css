@@ -1211,3 +1211,41 @@ p {
     gap: 12px !important;
   }
 }
+/* Home page - compact mobile hero */
+@media (max-width: 620px) {
+
+  .home-hero {
+    padding: 38px 28px 30px !important;
+    gap: 28px !important;
+  }
+
+  .home-hero-content h1 {
+    font-size: 3.15rem !important;
+    line-height: 0.98 !important;
+    margin-bottom: 22px !important;
+  }
+
+  .hero-tagline {
+    font-size: 1.25rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 18px !important;
+  }
+
+  .hero-text {
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 24px !important;
+  }
+
+  .hero-buttons {
+    gap: 12px !important;
+  }
+
+  .hero-buttons .button {
+    padding: 13px 20px !important;
+  }
+
+  .home-hero-card {
+    padding: 25px 20px !important;
+  }
+}
