@@ -1138,4 +1138,20 @@ p {
     padding-top: 0px !important;
   }
 }
-5
+
+/* Individual gallery - tighten Back button area */
+.gallery-photo-section + .section {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+@media (max-width: 620px) {
+  .gallery-photo-section + .section {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+  }
+
+  .gallery-photo-section + .section + .site-footer {
+    margin-top: 10px !important;
+  }
+}
