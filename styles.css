@@ -1479,3 +1479,19 @@ p {
 .home-gallery {
   padding-top: 25px;
 }
+/* FIX ABOUT → JOURNEY GAP */
+.home-about {
+  padding-bottom: 0 !important;
+}
+
+.home-about .section-heading {
+  margin-bottom: 0 !important;
+}
+
+.home-celebrations {
+  padding-top: 15px !important;
+}
+
+.home-celebrations .section-heading {
+  margin-top: 0 !important;
+}
