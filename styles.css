@@ -1580,3 +1580,40 @@ p {
     margin-top: 0 !important;
   }
 }
+/* FEEDBACK SUCCESS MESSAGE */
+.feedback-success {
+  margin-top: 24px;
+  padding: 30px 24px;
+  background: #fff8f3;
+  border: 1px solid #eadfd7;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.feedback-success-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: #7b1e3a;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.feedback-success h3 {
+  margin-bottom: 10px;
+  color: #7b1e3a;
+  font-size: 1.5rem;
+}
+
+.feedback-success p {
+  max-width: 520px;
+  margin: 0 auto;
+  color: #76666f;
+  line-height: 1.6;
+}
