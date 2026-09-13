@@ -271,23 +271,18 @@ submitButton.textContent = "Sending...";
 const formData = new FormData(feedbackForm);  
 
 try {  
-  const response = await fetch(  
-    "https://script.google.com/macros/s/AKfycbwFcgJ6kFL9FWpxPbkaG-jwYw_-KkuyzImi64ITbLFRM1Z5qRNP8Z1HLezlBWKLc-AC0g/exec",  
-    {  
-      method: "POST",  
-      body: formData  
-    }  
-  );  
+  
+await fetch(
+  "https://script.google.com/macros/s/AKfycbwFcgJ6kFL9FWpxPbkaG-jwYw_-KkuyzImi64ITbLFRM1Z5qRNP8Z1HLezlBWKLc-AC0g/exec",
+  {
+    method: "POST",
+    mode: "no-cors",
+    body: formData
+  }
+);
 
-  const result = await response.text();  
-
-  if (result.trim() === "success") {  
-    alert("Thank you. Your feedback has been received.");  
-    feedbackForm.reset();  
-  } else {  
-    alert("Something went wrong. Please try again.");  
-  }  
-
+alert("Thank you. Your message has been received.");
+feedbackForm.reset();
 } catch (error) {  
   console.error("Feedback submission error:", error);  
   alert("Unable to send feedback. Please try again.");  
