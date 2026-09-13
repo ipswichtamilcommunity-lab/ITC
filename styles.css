@@ -1453,13 +1453,17 @@ p {
     padding-top: 12px !important;
   }
 }
+/* HOMEPAGE MOBILE HEADING SIZE - FINAL */
 @media (max-width: 620px) {
-  .home-about h2,
-  .home-celebrations h2,
-  .gallery-preview h2,
-  .contact-preview h2 {
+
+  .home-about .section-heading h2,
+  .home-celebrations .section-heading h2,
+  .gallery-preview .section-heading h2,
+  .contact-preview .section-heading h2 {
     font-family: "Playfair Display", serif !important;
-    font-size: 1.65rem !important;
-    line-height: 1.15 !important;
+    font-size: 1.4rem !important;
+    line-height: 1.2 !important;
+    font-weight: 700 !important;
   }
+
 }
