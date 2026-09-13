@@ -111,7 +111,7 @@ const formData = new FormData(form);
 formData.set("amountToPay", amountToPay);
 
 await fetch(
-  "https://script.google.com/macros/s/AKfycbwJC9UXWnsOVBggPfB5X8dEju5996jCMXNDQHCM5G-yUgSooSdzaJ-1N_eGXr9KRVzY/exec",
+  "https://script.google.com/macros/s/AKfycbxfJEfUiiPuOZDnUGbRWd0sKdpkXuHmGj5h5zdtqhrzJhZMiysxpOUQQ8_PhrYsxV4/exec",
   {
     method: "POST",
     mode: "no-cors",
