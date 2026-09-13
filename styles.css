@@ -1732,3 +1732,23 @@ p {
     padding-top: 12px !important;
   }
 }
+/* FINAL HERO HEIGHT TIGHTENING */
+@media (max-width: 768px) {
+
+  .home-hero-overlay {
+    padding-top: 32px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .home-hero .hero-tagline {
+    margin-bottom: 22px !important;
+  }
+
+  .home-hero .hero-buttons {
+    margin-top: 0 !important;
+  }
+
+  .home-hero + .section {
+    padding-top: 18px !important;
+  }
+}
