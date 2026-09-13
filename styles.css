@@ -1627,3 +1627,29 @@ p {
     font-size: 18px;
   }
 }
+@media (max-width: 600px) {
+
+  .home-hero-overlay {
+    padding-top: 30px !important;
+    padding-bottom: 38px !important;
+  }
+
+  .home-hero .hero-kicker {
+    margin-top: 0 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .home-hero h1 {
+    margin-bottom: 18px !important;
+  }
+
+  .home-hero .hero-tagline {
+    margin-bottom: 26px !important;
+  }
+}
+@media (max-width: 600px) {
+  .home-hero h1 {
+    font-size: 38px !important;
+    line-height: 1.08 !important;
+  }
+}
