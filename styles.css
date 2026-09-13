@@ -1722,3 +1722,13 @@ p {
     padding: 22px 24px 28px !important;
   }
 }
+/* Tighten hero to About Us gap */
+@media (max-width: 768px) {
+  .home-hero-overlay {
+    padding-bottom: 8px !important;
+  }
+
+  .home-hero + .section {
+    padding-top: 12px !important;
+  }
+}
