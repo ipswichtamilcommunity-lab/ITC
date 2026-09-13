@@ -1406,3 +1406,47 @@ p {
     font-size: 0.95rem !important;
   }
 }
+/* ===== FINAL HOMEPAGE SPACING FIX ===== */
+
+/* Hero → About Us */
+.home-about {
+  padding-top: 35px !important;
+  padding-bottom: 30px !important;
+}
+
+/* About Us → Our Journey */
+.home-celebrations {
+  padding-top: 30px !important;
+  padding-bottom: 35px !important;
+}
+
+/* Our Journey → Gallery */
+.home-gallery {
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+}
+
+/* Gallery button → Diwali */
+.diwali-preview {
+  margin-top: 0 !important;
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+}
+
+/* Diwali → Stay Connected */
+.home-connect {
+  margin-top: 0 !important;
+  padding-top: 35px !important;
+  padding-bottom: 40px !important;
+}
+
+@media (max-width: 768px) {
+  .home-about,
+  .home-celebrations,
+  .home-gallery,
+  .diwali-preview,
+  .home-connect {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
