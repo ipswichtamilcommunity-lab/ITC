@@ -1475,3 +1475,78 @@ p {
     font-weight: 700 !important;
   }
 }
+/* =========================================
+   FINAL CELEBRATIONS MOBILE POLISH
+========================================= */
+
+@media (max-width: 620px) {
+
+  /* Overall celebration sections */
+  .celebration-year {
+    padding-top: 16px !important;
+    padding-bottom: 18px !important;
+  }
+
+  /* Year label */
+  .celebration-year .year-heading span {
+    margin-bottom: 8px !important;
+    font-size: 0.95rem !important;
+  }
+
+  /* Year headings */
+  .celebration-year .year-heading h2 {
+    font-size: 2rem !important;
+    line-height: 1.12 !important;
+    margin-bottom: 14px !important;
+  }
+
+  /* Slightly smaller 2026 heading */
+  .celebration-year:last-of-type .year-heading h2 {
+    font-size: 1.85rem !important;
+  }
+
+  /* Space below headings */
+  .celebration-year .year-heading {
+    margin-bottom: 14px !important;
+  }
+
+  /* Cards */
+  .celebration-year .event-card {
+    border-radius: 20px !important;
+  }
+
+  .celebration-year .event-image-placeholder {
+    min-height: 105px !important;
+  }
+
+  .celebration-year .event-card-content {
+    padding: 18px 20px 20px !important;
+  }
+
+  .celebration-year .event-card h3 {
+    font-size: 1.35rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 14px !important;
+  }
+
+  .celebration-year .event-card-content p {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .celebration-year .text-link {
+    display: inline-block;
+    margin-top: 2px !important;
+  }
+
+  /* Tighter spacing between cards */
+  .celebration-year .celebration-grid {
+    gap: 16px !important;
+  }
+
+  /* 2026 upcoming card */
+  .celebration-year .event-card .button {
+    margin-top: 8px !important;
+  }
+}
