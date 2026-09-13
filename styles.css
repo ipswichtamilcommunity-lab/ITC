@@ -1284,10 +1284,13 @@ p {
     margin-top: 22px;
   }
 }
-/* HOME - smaller fonts + tighter spacing */
+/* =========================================
+   FINAL HOMEPAGE MOBILE STYLING
+========================================= */
 
 @media (max-width: 620px) {
 
+  /* HERO */
   .home-hero-overlay {
     padding: 20px 24px 22px !important;
   }
@@ -1304,11 +1307,13 @@ p {
 
   .home-hero .hero-tagline {
     font-size: 1rem !important;
+    line-height: 1.5 !important;
     margin-bottom: 14px !important;
   }
 
   .hero-highlights {
     margin: 14px auto 16px !important;
+    gap: 10px;
   }
 
   .hero-highlight span {
@@ -1317,32 +1322,12 @@ p {
     font-size: 22px;
   }
 
-  .home-about,
-  .home-celebrations {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
+  .hero-highlight p {
+    font-size: 0.92rem;
   }
 
-  .home-about .section-heading h2,
-  .home-celebrations .section-heading h2,
-  .gallery-preview .section-heading h2 {
-    font-size: 1.65rem !important;
-    line-height: 1.15 !important;
-    margin-bottom: 8px !important;
-  }
 
-  .section-heading {
-    margin-bottom: 14px !important;
-  }
-
-  .home-celebrations .button {
-    margin-top: 14px !important;
-  }
-}
-/* FINAL MOBILE GAP + FONT FIX */
-@media (max-width: 620px) {
-
-  /* About / Journey / Gallery headings */
+  /* HOMEPAGE HEADINGS */
   .home-about h2,
   .home-celebrations h2,
   .gallery-preview h2,
@@ -1351,7 +1336,6 @@ p {
     line-height: 1.15 !important;
   }
 
-  /* Normal paragraph size */
   .home-about p,
   .home-celebrations p,
   .gallery-preview p,
@@ -1360,139 +1344,79 @@ p {
     line-height: 1.55 !important;
   }
 
-  /* All homepage sections closer together */
-  main > .section {
+
+  /* HERO → ABOUT */
+  main > .section.home-about {
     padding-top: 22px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .home-about .section-heading {
+    margin-bottom: 0 !important;
+  }
+
+  .home-about .section-heading > p:last-child {
+    margin-bottom: 0 !important;
+  }
+
+
+  /* ABOUT → JOURNEY */
+  main > .section.home-celebrations {
+    padding-top: 8px !important;
     padding-bottom: 22px !important;
   }
 
-  /* Journey -> Gallery */
-  .home-celebrations {
-    padding-bottom: 22px !important;
-  }
-
-  .gallery-preview {
-    padding-top: 22px !important;
-    padding-bottom: 22px !important;
-  }
-
-  /* Gallery button */
-  .gallery-preview .centre-button {
-    margin-top: 16px !important;
-  }
-
-  /* Gallery -> Diwali */
-  .diwali-preview {
-    padding-top: 22px !important;
-    padding-bottom: 22px !important;
-  }
-
-  /* Diwali -> Stay Connected */
-  .contact-preview {
-    padding-top: 22px !important;
-    padding-bottom: 22px !important;
-  }
-
-  /* Remove giant space before footer */
-  .site-footer {
+  .home-celebrations .section-heading {
     margin-top: 0 !important;
+    margin-bottom: 0 !important;
   }
 
-  /* Smaller Journey button */
+  .home-celebrations .eyebrow {
+    margin-top: 0 !important;
+    margin-bottom: 12px !important;
+  }
+
   .home-celebrations .button {
     margin-top: 16px !important;
     padding: 11px 18px !important;
     min-height: 44px !important;
     font-size: 0.95rem !important;
   }
-}
-/* ===== FINAL HOMEPAGE SPACING FIX ===== */
 
-/* Hero → About Us */
-.home-about {
-  padding-top: 35px !important;
-  padding-bottom: 30px !important;
-}
 
-/* About Us → Our Journey */
-.home-celebrations {
-  padding-top: 30px !important;
-  padding-bottom: 35px !important;
-}
-
-/* Our Journey → Gallery */
-.home-gallery {
-  padding-top: 35px !important;
-  padding-bottom: 35px !important;
-}
-
-/* Gallery button → Diwali */
-.diwali-preview {
-  margin-top: 0 !important;
-  padding-top: 35px !important;
-  padding-bottom: 35px !important;
-}
-
-/* Diwali → Stay Connected */
-.home-connect {
-  margin-top: 0 !important;
-  padding-top: 35px !important;
-  padding-bottom: 40px !important;
-}
-
-@media (max-width: 768px) {
-  .home-about,
-  .home-celebrations,
-  .home-gallery,
-  .diwali-preview,
-  .home-connect {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+  /* JOURNEY → GALLERY */
+  main > .section.gallery-preview {
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
   }
-}
-/* HOMEPAGE SPACING ONLY */
-.home-about,
-.home-celebrations {
-  padding-top: 45px;
-  padding-bottom: 45px;
-}
 
-.home-gallery {
-  padding-top: 45px;
-  padding-bottom: 45px;
-}
+  .gallery-preview .section-heading {
+    margin-bottom: 14px !important;
+  }
 
-.diwali-preview {
-  margin-top: 20px;
-  margin-bottom: 45px;
-}
-/* TIGHTER HOMEPAGE SECTION SPACING */
-.home-about {
-  padding-bottom: 5px;
-}
+  .gallery-preview .centre-button {
+    margin-top: 16px !important;
+  }
 
-.home-celebrations {
-  padding-top: 5px;
-  padding-bottom: 25px;
-}
 
-.home-gallery {
-  padding-top: 25px;
-}
-/* FINAL ABOUT → JOURNEY SPACING FIX */
+  /* GALLERY → DIWALI */
+  main > .section.diwali-preview {
+    margin-top: 0 !important;
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+  }
 
-.home-about .section-heading > p:last-child {
-  margin-bottom: 0 !important;
-}
 
-.home-about {
-  padding-bottom: 0 !important;
-}
+  /* DIWALI → STAY CONNECTED */
+  main > .section.contact-preview {
+    margin-top: 0 !important;
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+  }
 
-.home-celebrations {
-  padding-top: 0 !important;
-}
 
-.home-celebrations .eyebrow {
-  margin-top: 20px !important;
+  /* FOOTER */
+  .site-footer {
+    margin-top: 0 !important;
+  }
 }
