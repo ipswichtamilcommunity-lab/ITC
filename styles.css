@@ -1811,3 +1811,37 @@ p {
     margin: 4px 0 0 !important;
   }
 }
+/* FINAL DIWALI HOME CARD FIX */
+@media (max-width: 768px) {
+
+  .diwali-preview-card {
+    display: block !important;
+    padding: 26px 24px !important;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .diwali-preview-card h2 {
+    font-size: 1.75rem !important;
+    line-height: 1.15 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .diwali-preview-card .diwali-date {
+    font-size: 1rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .diwali-preview-card p {
+    line-height: 1.55 !important;
+  }
+
+  .diwali-preview-card .button {
+    margin-top: 6px !important;
+  }
+
+  .diwali-symbol {
+    display: none !important;
+  }
+}
