@@ -281,8 +281,29 @@ await fetch(
   }
 );
 
-alert("Thank you. Your message has been received.");
+
 feedbackForm.reset();
+  const successMessage = document.createElement("div");
+successMessage.className = "feedback-success";
+
+successMessage.innerHTML = `
+  <div class="feedback-success-icon">✓</div>
+  <h3>Thank you for your feedback!</h3>
+  <p>
+    We truly appreciate you taking the time to share your thoughts with us.
+    Your feedback is valuable and helps us make our community events and activities even better.
+  </p>
+  <p>
+    Warm wishes,<br>
+    <strong>Ipswich Tamil Community</strong>
+  </p>
+`;
+feedbackForm.insertAdjacentElement("afterend", successMessage);
+
+successMessage.scrollIntoView({
+  behavior: "smooth",
+  block: "center"
+});
 } catch (error) {  
   console.error("Feedback submission error:", error);  
   alert("Unable to send feedback. Please try again.");  
