@@ -1752,3 +1752,10 @@ p {
     padding-top: 18px !important;
   }
 }
+/* HOME ABOUT HEADING - MOBILE */
+@media (max-width: 768px) {
+  .home-hero + .section .section-heading h2 {
+    font-size: 2rem !important;
+    line-height: 1.15 !important;
+  }
+}
