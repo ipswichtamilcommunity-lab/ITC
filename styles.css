@@ -52,6 +52,7 @@ p {
   margin-top: 0;
 }
 
+/* HEADER */
 .site-header {
   position: sticky;
   top: 0;
@@ -104,57 +105,16 @@ p {
   border-radius: 999px;
 }
 
-.home-hero,
-.page-hero {
-  width: min(1180px, 88%);
-  margin: 0 auto;
-}
-
-.home-hero {
-  min-height: 72vh;
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 42px;
-  align-items: center;
-  padding: 72px 0 56px;
-}
-
-.home-hero-content h1,
-.page-hero h1 {
-  font-size: clamp(2.5rem, 6vw, 5rem);
+.menu-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  font-size: 2rem;
   color: var(--primary);
-  margin-bottom: 18px;
+  cursor: pointer;
 }
 
-.hero-tagline {
-  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 16px;
-}
-
-.hero-text,
-.page-hero p {
-  max-width: 720px;
-  font-size: 1.05rem;
-  color: var(--muted);
-}
-
-.eyebrow {
-  margin-bottom: 10px;
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  color: var(--accent);
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-  margin-top: 28px;
-}
-
+/* GENERAL BUTTONS */
 .button {
   display: inline-flex;
   align-items: center;
@@ -188,38 +148,7 @@ p {
   border-color: var(--border);
 }
 
-.home-hero-card,
-.diwali-preview-card,
-.callout-card,
-.contact-highlight {
-  background:
-    linear-gradient(135deg, rgba(123,30,58,0.96), rgba(94,20,43,0.96));
-  color: white;
-  border-radius: 28px;
-  padding: 34px;
-  box-shadow: var(--shadow);
-}
-
-.home-hero-card h2,
-.diwali-preview-card h2,
-.callout-card h2,
-.contact-highlight h2 {
-  color: white;
-}
-
-.home-hero-card p,
-.diwali-preview-card p,
-.callout-card p,
-.contact-highlight p {
-  color: rgba(255,255,255,0.88);
-}
-
-.hero-icon,
-.diwali-symbol {
-  font-size: 4rem;
-  margin-bottom: 18px;
-}
-
+/* GENERAL SECTIONS */
 .section {
   width: min(1180px, 88%);
   margin: 0 auto;
@@ -242,6 +171,15 @@ p {
   color: var(--muted);
 }
 
+.eyebrow {
+  margin-bottom: 10px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+}
+
+/* CARDS + GRIDS */
 .feature-grid,
 .year-preview-grid,
 .photo-grid,
@@ -316,6 +254,7 @@ p {
   margin-top: 28px;
 }
 
+/* GALLERY */
 .gallery-preview-grid,
 .photo-grid {
   margin-top: 12px;
@@ -346,6 +285,197 @@ p {
   font-weight: 700;
 }
 
+.home-gallery-card {
+  overflow: hidden;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.home-gallery-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.home-gallery-card p {
+  margin: 0;
+  padding: 14px 16px;
+  font-weight: 700;
+  color: var(--primary);
+  text-align: center;
+}
+
+.gallery-cta {
+  background: #7f203d !important;
+  color: #ffffff !important;
+  padding: 42px 32px !important;
+  border-radius: 28px !important;
+  margin: 20px auto !important;
+}
+
+.gallery-cta .eyebrow,
+.gallery-cta h2,
+.gallery-cta p {
+  color: #ffffff !important;
+}
+
+.gallery-cta .button {
+  display: inline-block !important;
+  margin-top: 24px !important;
+  background: #ffffff !important;
+  color: #7f203d !important;
+  padding: 14px 24px !important;
+  border-radius: 999px !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+}
+
+.gallery-social {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 32px;
+  background: #fff7f4;
+  border: 1px solid #ead8d2;
+  border-radius: 28px;
+  text-align: center;
+}
+
+.gallery-social h2 {
+  color: #7f203d;
+  margin: 0 0 16px;
+}
+
+.gallery-social p {
+  max-width: 650px;
+  margin: 0 auto 28px;
+  line-height: 1.7;
+}
+
+.gallery-social .button {
+  display: inline-block;
+  background: #7f203d;
+  color: #ffffff !important;
+  padding: 14px 26px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.gallery-years-section {
+  padding-top: 10px !important;
+  padding-bottom: 20px !important;
+}
+
+.gallery-years-section .gallery-year h2 {
+  font-family: "DM Sans", Arial, sans-serif !important;
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: #7f203d !important;
+  margin: 0 0 18px !important;
+}
+
+.gallery-years-section .gallery-year + .gallery-year {
+  margin-top: 45px !important;
+}
+
+.gallery-years-section .gallery-album {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #fff7f4;
+  border: 1px solid #ead8d2;
+  border-radius: 20px;
+  padding: 18px 20px;
+  margin-top: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery-years-section .gallery-album-icon {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.gallery-years-section .gallery-album h3 {
+  font-family: "DM Sans", Arial, sans-serif !important;
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+  color: #7f203d !important;
+  margin: 0 0 6px !important;
+}
+
+.gallery-years-section .gallery-album p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.gallery-years-section .gallery-album:hover {
+  transform: translateY(-2px);
+  transition: 0.2s ease;
+}
+
+.gallery-years-section .gallery-year:last-child {
+  margin-bottom: 0 !important;
+}
+
+.gallery-years-section + .section {
+  padding-top: 20px !important;
+}
+
+.gallery-photo-section {
+  padding-top: 20px !important;
+  padding-bottom: 0 !important;
+}
+
+.gallery-back-section {
+  width: min(92%, 1180px);
+  margin: 0 auto;
+  padding: 25px 0;
+}
+
+.section:has(.photo-grid) {
+  padding-top: 25px !important;
+}
+
+/* DIWALI / CALLOUT CARDS */
+.home-hero-card,
+.diwali-preview-card,
+.callout-card,
+.contact-highlight {
+  background:
+    linear-gradient(135deg, rgba(123,30,58,0.96), rgba(94,20,43,0.96));
+  color: white;
+  border-radius: 28px;
+  padding: 34px;
+  box-shadow: var(--shadow);
+}
+
+.home-hero-card h2,
+.diwali-preview-card h2,
+.callout-card h2,
+.contact-highlight h2 {
+  color: white;
+}
+
+.home-hero-card p,
+.diwali-preview-card p,
+.callout-card p,
+.contact-highlight p {
+  color: rgba(255,255,255,0.88);
+}
+
+.hero-icon,
+.diwali-symbol {
+  font-size: 4rem;
+  margin-bottom: 18px;
+}
+
 .diwali-preview-card,
 .callout-card,
 .contact-highlight {
@@ -360,10 +490,26 @@ p {
   font-size: 1.05rem;
 }
 
+/* PAGE HERO */
 .page-hero {
+  width: min(1180px, 88%);
+  margin: 0 auto;
   padding: 72px 0 30px;
 }
 
+.page-hero h1 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  color: var(--primary);
+  margin-bottom: 18px;
+}
+
+.page-hero p {
+  max-width: 720px;
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+/* CELEBRATIONS */
 .celebration-year {
   padding-top: 44px;
 }
@@ -397,6 +543,7 @@ p {
   font-size: 0.9rem;
 }
 
+/* EVENT PAGE */
 .event-page-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -459,6 +606,7 @@ p {
   font-size: 0.9rem;
 }
 
+/* FORMS */
 .registration-card h2 {
   color: var(--primary);
 }
@@ -525,10 +673,136 @@ p {
   margin-top: 4px;
 }
 
+.form-attempted input:invalid,
+.form-attempted textarea:invalid,
+.form-attempted select:invalid {
+  border-color: #b42318;
+}
+
+.form-attempted input:focus:invalid,
+.form-attempted textarea:focus:invalid,
+.form-attempted select:focus:invalid {
+  outline: 2px solid rgba(180, 35, 24, 0.15);
+}
+
+.success-message {
+  margin-top: 28px;
+  margin-bottom: 24px;
+  color: #18794e;
+  line-height: 1.6;
+}
+
+.whatsapp-box {
+  margin-top: 18px;
+  padding: 22px;
+  border: 2px solid #25d366;
+  border-radius: 16px;
+  background: #f0fff5;
+  text-align: center;
+  color: #173b27;
+}
+
+.whatsapp-box strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.whatsapp-box p {
+  margin: 6px 0 16px;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  padding: 13px 22px;
+  background: #25d366;
+  color: #ffffff !important;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.whatsapp-button:hover {
+  opacity: 0.9;
+}
+
+.payment-box {
+  margin-top: 20px;
+  margin-bottom: 22px;
+  padding: 22px;
+  border: 2px solid #d9a441;
+  border-radius: 16px;
+  background: #fffaf0;
+  color: #2f2a2a;
+}
+
+.payment-box > strong {
+  display: block;
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+
+.amount-to-pay {
+  margin: 14px 0 18px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #7b1e3a;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.payment-box p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.ticket-total-box {
+  margin: 22px 0;
+  padding: 18px;
+  background: #fff8e8;
+  border: 2px solid #d9a441;
+  border-radius: 14px;
+}
+
+.ticket-total-box label {
+  font-weight: 700;
+  color: #7b1e3a;
+  font-size: 1.05rem;
+}
+
+.ticket-total-box input {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  color: #7b1e3a;
+  background: white;
+}
+
+.ticket-price-note {
+  margin: 10px 0 0;
+  text-align: center;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* CONTACT */
 .contact-grid {
   margin-bottom: 34px;
 }
 
+.page-hero + .contact-page {
+  padding-top: 0 !important;
+}
+
+.page-hero:has(+ .contact-page) {
+  padding-bottom: 0 !important;
+}
+
+/* FOOTER */
 .site-footer {
   margin-top: 50px;
   padding: 34px 6%;
@@ -541,6 +815,7 @@ p {
   margin: 4px 0;
 }
 
+/* TABLET */
 @media (max-width: 900px) {
   .site-header {
     align-items: flex-start;
@@ -559,7 +834,6 @@ p {
     white-space: nowrap;
   }
 
-  .home-hero,
   .event-page-grid {
     grid-template-columns: 1fr;
   }
@@ -581,189 +855,7 @@ p {
   }
 }
 
-@media (max-width: 620px) {
-  .site-header {
-    padding: 14px 5%;
-  }
-
-  .brand {
-    font-size: 1.05rem;
-  }
-
-  .home-hero,
-  .page-hero,
-  .section {
-    width: min(92%, 1180px);
-  }
-
-  .home-hero {
-    padding-top: 44px;
-  }
-
-  .home-hero-content h1,
-  .page-hero h1 {
-    font-size: 2.45rem;
-  }
-
-  .section {
-    padding: 54px 0;
-  }
-
-  .feature-grid,
-  .year-preview-grid,
-  .photo-grid,
-  .gallery-preview-grid,
-  .contact-grid,
-  .celebration-grid,
-  .form-row {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-  }
-
-  .hero-buttons .button {
-    width: 100%;
-  }
-
-  .home-hero-card,
-  .diwali-preview-card,
-  .callout-card,
-  .contact-highlight,
-  .registration-card,
-  .event-details-card,
-  .event-description-card {
-    padding: 22px;
-    border-radius: 20px;
-  }
-
-  .photo-placeholder,
-  .gallery-placeholder,
-  .event-image-placeholder {
-    min-height: 170px;
-  }
-}
-
-/* MOBILE HOMEPAGE FIXES */
-@media (max-width: 620px) {
-
-  .site-header {
-    padding: 16px 20px;
-    position: static;
-  }
-
-  .brand {
-    font-size: 1.15rem;
-    white-space: normal;
-  }
-
-  .main-nav {
-    display: flex;
-    overflow-x: auto;
-    gap: 18px;
-    padding-top: 10px;
-    padding-bottom: 6px;
-    width: 100%;
-  }
-
-  .main-nav a {
-    font-size: 0.9rem;
-    flex: 0 0 auto;
-  }
-
-  .home-hero {
-    min-height: auto;
-    padding: 34px 0 30px;
-    gap: 28px;
-  }
-
-  .home-hero-content h1 {
-    font-size: 3rem;
-    line-height: 0.98;
-    margin-bottom: 22px;
-  }
-
-  .hero-tagline {
-    font-size: 1.15rem;
-    line-height: 1.5;
-  }
-
-  .hero-text {
-    font-size: 1rem;
-    line-height: 1.7;
-  }
-
-  .hero-buttons {
-    gap: 12px;
-  }
-
-  .hero-buttons .button {
-    width: 100%;
-    min-height: 50px;
-    font-size: 1rem;
-  }
-
-  .home-hero-card {
-    padding: 28px 22px;
-    text-align: center;
-  }
-
-  .home-hero-card h2 {
-    font-size: 1.9rem;
-    line-height: 1.2;
-  }
-
-  .hero-icon {
-    font-size: 3rem;
-  }
-
-  .section-heading h2 {
-    font-size: 2rem;
-  }
-
-  .section-heading p {
-    font-size: 1rem;
-  }
-
-  .feature-card,
-  .year-preview-card,
-  .photo-card,
-  .gallery-card,
-  .contact-card,
-  .event-card-content {
-    padding: 22px;
-  }
-
-  .year-preview-card h3 {
-    font-size: 1.4rem;
-  }
-
-  .diwali-preview-card,
-  .callout-card,
-  .contact-highlight {
-    padding: 24px;
-  }
-
-  .diwali-preview-card h2,
-  .callout-card h2,
-  .contact-highlight h2 {
-    font-size: 2rem;
-  }
-
-  .site-footer {
-    padding: 28px 20px;
-  }
-}
-.menu-toggle {
-  display: none;
-  border: 0;
-  background: transparent;
-  font-size: 2rem;
-  color: var(--primary);
-  cursor: pointer;
-}
-
+/* MOBILE GLOBAL */
 @media (max-width: 620px) {
   .site-header {
     position: relative;
@@ -775,6 +867,9 @@ p {
 
   .brand {
     max-width: 75%;
+    font-size: 1.20rem !important;
+    line-height: 1.2;
+    white-space: normal;
   }
 
   .menu-toggle {
@@ -814,129 +909,12 @@ p {
   .main-nav a.active::after {
     display: none;
   }
-}
-.form-attempted input:invalid,
-.form-attempted textarea:invalid,
-.form-attempted select:invalid {
-  border-color: #b42318;
-}
 
-.form-attempted input:focus:invalid,
-.form-attempted textarea:focus:invalid,
-.form-attempted select:focus:invalid {
-  outline: 2px solid rgba(180, 35, 24, 0.15);
-}
+  .page-hero,
+  .section {
+    width: min(92%, 1180px);
+  }
 
-.success-message {
-  margin-bottom: 20px;
-  color: #18794e;
-  line-height: 1.6;
-}
-
-.whatsapp-box {
-  margin-top: 18px;
-  padding: 22px;
-  border: 2px solid #25d366;
-  border-radius: 16px;
-  background: #f0fff5;
-  text-align: center;
-  color: #173b27;
-}
-
-.whatsapp-box strong {
-  display: block;
-  font-size: 1.1rem;
-  margin-bottom: 8px;
-}
-
-.whatsapp-box p {
-  margin: 6px 0 16px;
-}
-
-.whatsapp-button {
-  display: inline-block;
-  padding: 13px 22px;
-  background: #25d366;
-  color: #ffffff !important;
-  border-radius: 999px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.whatsapp-button:hover {
-  opacity: 0.9;
-}
-
-.success-message {
-  margin-top: 28px;
-  margin-bottom: 24px;
-}
-.payment-box {
-  margin-top: 20px;
-  margin-bottom: 22px;
-  padding: 22px;
-  border: 2px solid #d9a441;
-  border-radius: 16px;
-  background: #fffaf0;
-  color: #2f2a2a;
-}
-
-.payment-box > strong {
-  display: block;
-  font-size: 1.15rem;
-  margin-bottom: 12px;
-}
-
-.amount-to-pay {
-  margin: 14px 0 18px;
-  padding: 14px;
-  border-radius: 12px;
-  background: #7b1e3a;
-  color: white;
-  font-size: 1.3rem;
-  font-weight: 700;
-  text-align: center;
-}
-
-.payment-box p {
-  margin: 8px 0;
-  line-height: 1.5;
-}
-.ticket-total-box {
-  margin: 22px 0;
-  padding: 18px;
-  background: #fff8e8;
-  border: 2px solid #d9a441;
-  border-radius: 14px;
-}
-
-.ticket-total-box label {
-  font-weight: 700;
-  color: #7b1e3a;
-  font-size: 1.05rem;
-}
-
-.ticket-total-box input {
-  margin-top: 10px;
-  font-size: 1.4rem;
-  font-weight: 700;
-  text-align: center;
-  color: #7b1e3a;
-  background: white;
-}
-
-.ticket-price-note {
-  margin: 10px 0 0;
-  text-align: center;
-  font-weight: 600;
-  color: #555;
-}
-.ticket-price-note {
-  line-height: 1.6;
-}
-
-
-@media (max-width: 620px) {
   .page-hero {
     padding-top: 35px !important;
     padding-bottom: 5px !important;
@@ -944,421 +922,62 @@ p {
   }
 
   .page-hero h1 {
-  font-size: 1.7rem !important;
-  line-height: 1.15 !important;
-  max-width: 100% !important;
-}
-  .diwali-event-page {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-  }
-
-  .event-poster {
-    margin-top: 0 !important;
-  }
-}
-.gallery-cta {
-  background: #7f203d !important;
-  color: #ffffff !important;
-  padding: 42px 32px !important;
-  border-radius: 28px !important;
-  margin: 20px auto !important;
-}
-
-.gallery-cta .eyebrow,
-.gallery-cta h2,
-.gallery-cta p {
-  color: #ffffff !important;
-}
-
-.gallery-cta .button {
-  display: inline-block !important;
-  margin-top: 24px !important;
-  background: #ffffff !important;
-  color: #7f203d !important;
-  padding: 14px 24px !important;
-  border-radius: 999px !important;
-  text-decoration: none !important;
-  font-weight: 700 !important;
-}
-
-.gallery-social {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 32px;
-  background: #fff7f4;
-  border: 1px solid #ead8d2;
-  border-radius: 28px;
-  text-align: center;
-}
-
-.gallery-social h2 {
-  color: #7f203d;
-  margin: 0 0 16px;
-}
-
-.gallery-social p {
-  max-width: 650px;
-  margin: 0 auto 28px;
-  line-height: 1.7;
-}
-
-.gallery-social .button {
-  display: inline-block;
-  background: #7f203d;
-  color: #ffffff !important;
-  padding: 14px 26px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 700;
-}
-/* Gallery years section */
-.gallery-years-section {
-  padding-top: 10px !important;
-}
-
-.gallery-years-section .gallery-year h2 {
-  font-family: "DM Sans", Arial, sans-serif !important;
-  font-size: 1.8rem !important;
-  font-weight: 700 !important;
-  color: #7f203d !important;
-  margin: 0 0 18px !important;
-}
-
-@media (max-width: 620px) {
-  .gallery-years-section {
-    padding-top: 0 !important;
-  }
-}
-.gallery-years-section .gallery-album h3 {
-  font-family: "DM Sans", Arial, sans-serif !important;
-  font-size: 1.45rem !important;
-  font-weight: 700 !important;
-  color: #7f203d !important;
-  margin: 8px 0 10px !important;
-}
-
-.gallery-years-section .gallery-album-icon {
-  margin-top: 4px;
-  margin-bottom: 4px;
-}
-/* Gallery album cards */
-.gallery-years-section .gallery-album {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  background: #fff7f4;
-  border: 1px solid #ead8d2;
-  border-radius: 20px;
-  padding: 18px 20px;
-  margin-top: 12px;
-  text-decoration: none;
-  color: inherit;
-}
-
-.gallery-years-section .gallery-album-icon {
-  font-size: 2rem;
-  flex-shrink: 0;
-}
-
-.gallery-years-section .gallery-album h3 {
-  font-family: "DM Sans", Arial, sans-serif !important;
-  font-size: 1.35rem !important;
-  font-weight: 700 !important;
-  color: #7f203d !important;
-  margin: 0 0 6px !important;
-}
-
-.gallery-years-section .gallery-album p {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #555;
-}
-
-.gallery-years-section .gallery-album:hover {
-  transform: translateY(-2px);
-  transition: 0.2s ease;
-}
-/* Reduce space below gallery albums */
-.gallery-years-section {
-  padding-bottom: 20px !important;
-}
-
-.gallery-years-section .gallery-year:last-child {
-  margin-bottom: 0 !important;
-}
-/* Tighten space before gallery CTA */
-.gallery-years-section + .section {
-  padding-top: 20px !important;
-}
-
-@media (max-width: 620px) {
-  .gallery-years-section + .section {
-    padding-top: 10px !important;
-  }
-}
-/* Space between gallery years */
-.gallery-years-section .gallery-year + .gallery-year {
-  margin-top: 28px !important;
-}
-
-/* Larger mobile website header */
-@media (max-width: 620px) {
-  .brand {
-    font-size: 1.35rem !important;
-    line-height: 1.2;
-  }
-}
-/* Space between gallery years */
-.gallery-years-section .gallery-year + .gallery-year {
-  margin-top: 45px !important;
-}
-@media (max-width: 620px) {
-  .site-header .brand {
-    font-size: 1.20rem !important;
-  }
-}
-/* Reduce gap before photos on gallery photo pages only */
-.section:has(.photo-grid) {
-  padding-top: 25px !important;
-}
-
-@media (max-width: 620px) {
-  .section:has(.photo-grid) {
-    padding-top: 15px !important;
-  }
-}
-.gallery-photo-section {
-  padding-top: 20px !important;
-  padding-bottom: 0 !important;
-}
-
-@media (max-width: 620px) {
-  .gallery-photo-section {
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;    
-  }
-}
-
-/* Compact Back to Gallery area */
-.gallery-back-section {
-  width: min(92%, 1180px);
-  margin: 0 auto;
-  padding: 25px 0;
-}
-
-@media (max-width: 620px) {
-  .gallery-back-section {
-    padding: 8px 0;
-  }
-}
-/* Reduce gap between Contact intro and contact cards */
-/* Reduce gap between Contact intro and contact cards */
-.page-hero + .contact-page {
-  padding-top: 0 !important;
-}
-
-.page-hero:has(+ .contact-page) {
-  padding-bottom: 0 !important;
-}
-
-@media (max-width: 620px) {
-  .page-hero + .contact-page {
-    padding-top: 0 !important;
-  }
-
-  .page-hero:has(+ .contact-page) {
-    padding-bottom: 0 !important;
-  }
-}
-/* Celebrations page - tighter mobile layout */
-@media (max-width: 620px) {
-
-  /* Description to first 2024 section */
-  .page-hero + .celebration-year {
-    padding-top: 5px !important;
-  }
-
-  .page-hero:has(+ .celebration-year) {
-    padding-bottom: 0 !important;
-  }
-
-  /* Less space around each year */
-  .celebration-year {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
-  }
-
-  .year-heading {
-    margin-bottom: 12px !important;
-  }
-
-  /* Shorter cards */
-  .celebration-year .event-image-placeholder {
-    min-height: 90px !important;
-  }
-
-  .celebration-year .event-card-content {
-    padding: 16px 18px !important;
-  }
-
-  .celebration-year .event-card-content p {
-    margin-bottom: 10px !important;
-  }
-
-  .celebration-year .celebration-grid {
-    gap: 12px !important;
-  }
-}
-/* Home page - balanced mobile hero */
-@media (max-width: 620px) {
-
-  .home-hero-content {
-  text-align: left;
-}
-
-.home-hero-content h1 {
-  font-size: 1.7rem;
-  line-height: 1.05;
-  margin-bottom: 18px;
-  text-align: left;
-}
-
-.home-hero-content .eyebrow,
-.home-hero-content .hero-tagline,
-.home-hero-content .hero-text {
-  text-align: left;
-}
-  .hero-tagline {
-    font-size: 1.18rem !important;
-    line-height: 1.45 !important;
-    margin-bottom: 16px !important;
-  }
-
-  .hero-text {
-    font-size: 1rem !important;
-    line-height: 1.65 !important;
-    margin-bottom: 24px !important;
-  }
-
-  .hero-buttons {
-    gap: 12px !important;
-  }
-
-  .hero-buttons .button {
-    padding: 14px 20px !important;
-  }
-
-  .home-hero-card {
-    padding: 26px 22px !important;
-  }
-}
-/* HOME PAGE - compact mobile layout */
-@media (max-width: 620px) {
-
-  /* Smaller section headings */
-  .section-heading h2 {
     font-size: 1.7rem !important;
-    line-height: 1.2 !important;
-    margin-bottom: 10px !important;
-  }
-
-  .home-hero-card h2,
-  .diwali-preview-card h2 {
-    font-size: 1.7rem !important;
-    line-height: 1.2 !important;
-  }
-
-  /* Reduce large gaps between Home sections */
-  .home-hero {
-    padding-bottom: 20px !important;
+    line-height: 1.15 !important;
+    max-width: 100% !important;
   }
 
   .section {
-    padding-top: 32px !important;
-    padding-bottom: 32px !important;
+    padding: 54px 0;
   }
 
-  .section-heading {
-    margin-bottom: 22px !important;
+  .feature-grid,
+  .year-preview-grid,
+  .photo-grid,
+  .gallery-preview-grid,
+  .contact-grid,
+  .celebration-grid,
+  .form-row {
+    grid-template-columns: 1fr;
   }
 
-  .home-celebrations,
-  .gallery-preview,
-  .diwali-preview,
-  .contact-preview {
-    padding-top: 32px !important;
-  }
-}
-/* FINAL HOME MOBILE SPACING FIX */
-@media (max-width: 620px) {
-
-  /* Make all home sections compact */
-  main > .section {
-    padding-top: 18px !important;
-    padding-bottom: 18px !important;
+  .home-hero-card,
+  .diwali-preview-card,
+  .callout-card,
+  .contact-highlight,
+  .registration-card,
+  .event-details-card,
+  .event-description-card {
+    padding: 22px;
+    border-radius: 20px;
   }
 
-  /* Remove extra gaps between consecutive sections */
-  main > .section + .section {
-    margin-top: 0 !important;
+  .photo-placeholder,
+  .gallery-placeholder,
+  .event-image-placeholder {
+    min-height: 170px;
   }
 
-  /* Heading spacing */
-  .section-heading {
-    margin-bottom: 18px !important;
+  .gallery-years-section {
+    padding-top: 0 !important;
   }
 
-  .section-heading h2 {
-    font-size: 1.7rem !important;
-    line-height: 1.2 !important;
-    margin-bottom: 10px !important;
+  .gallery-years-section + .section {
+    padding-top: 10px !important;
   }
 
-  /* Journey cards */
-  .year-preview-grid {
-    gap: 14px !important;
+  .gallery-photo-section {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 
-  .centre-button {
-    margin-top: 18px !important;
+  .gallery-back-section {
+    padding: 8px 0;
   }
 
-  /* Specifically remove excess space before Gallery */
-  .gallery-preview {
-    padding-top: 18px !important;
+  .section:has(.photo-grid) {
+    padding-top: 15px !important;
   }
-
-  /* Reduce space after About */
-  .home-celebrations {
-    padding-top: 18px !important;
-  }
-}
-.home-gallery-card {
-  overflow: hidden;
-  border-radius: 18px;
-  background: #fff;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-}
-
-.home-gallery-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.home-gallery-card p {
-  margin: 0;
-  padding: 14px 16px;
-  font-weight: 700;
-  color: var(--primary);
-  text-align: center;
-}
-
-/* HOME GALLERY - mobile fix */
-@media (max-width: 620px) {
 
   .gallery-preview-grid {
     grid-template-columns: 1fr !important;
@@ -1377,492 +996,58 @@ p {
     margin: 5px 0 0 !important;
     text-align: center;
   }
-}
-/* HOME HERO COVER */
-.home-hero {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  background: #7b1e3a;
-}
 
-.home-hero-image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.home-hero-overlay {
-  text-align: center;
-  padding: 34px 20px 42px;
-  background: linear-gradient(
-    180deg,
-    #7b1e3a 0%,
-    #68172f 100%
-  );
-  color: white;
-}
-
-.hero-kicker {
-  margin: 0 0 8px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  color: #e7bd63;
-}
-
-.home-hero h1 {
-  margin: 0;
-  font-family: "Playfair Display", serif;
-  font-size: clamp(2rem, 7vw, 4.5rem);
-  line-height: 1.05;
-  color: white;
-}
-
-.hero-tagline {
-  max-width: 720px;
-  margin: 14px auto 24px;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #f6e9ed;
-}
-
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.hero-buttons a {
-  text-decoration: none;
-  padding: 12px 20px;
-  border-radius: 999px;
-  font-weight: 700;
-}
-
-.btn-primary {
-  background: #d9a441;
-  color: #4f1026;
-}
-
-.btn-secondary {
-  border: 1px solid #e7bd63;
-  color: white;
-  background: transparent;
-}
-
-@media (min-width: 768px) {
-  .home-hero-overlay {
-    padding: 42px 24px 50px;
+  .page-hero + .contact-page {
+    padding-top: 0 !important;
   }
 
-  .hero-tagline {
-    font-size: 1.1rem;
-  }
-}
-/* ===== HOMEPAGE HERO FIX ===== */
-
-.home-hero {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background: #fffaf5;
-  overflow: hidden;
-}
-
-.home-hero-image {
-  display: block;
-  width: 100%;
-  max-width: 1400px;
-  height: auto;
-  margin: 0 auto;
-}
-
-.home-hero-overlay {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 38px 24px 55px;
-  text-align: left;
-  background: transparent;
-  color: #2b1d26;
-}
-
-.home-hero .hero-kicker {
-  margin: 0 0 14px;
-  color: #7b1e3a;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-}
-
-.home-hero h1 {
-  margin: 0 0 20px;
-  color: #2b1d26;
-  font-family: "Playfair Display", serif;
-}
-
-.home-hero .hero-tagline {
-  margin: 0 0 28px;
-  max-width: 700px;
-  color: #2b1d26;
-  font-weight: 500;
-}
-
-.home-hero .hero-buttons {
-  display: flex;
-  gap: 12px;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.home-hero .hero-buttons a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 13px 22px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.home-hero .btn-primary {
-  background: #7b1e3a;
-  color: #fff;
-}
-
-.home-hero .btn-secondary {
-  background: #fff;
-  color: #7b1e3a;
-  border: 2px solid #7b1e3a;
-}
-
-@media (max-width: 767px) {
-  .home-hero-image {
-    width: 100%;
-    margin: 0;
+  .page-hero:has(+ .contact-page) {
+    padding-bottom: 0 !important;
   }
 
-  .home-hero-overlay {
-    padding: 30px 24px 45px;
+  .page-hero + .celebration-year {
+    padding-top: 5px !important;
   }
 
-  .home-hero h1 {
-    font-size: 3rem;
-    line-height: 1.02;
-  }
-}
-/* ===== HOMEPAGE HERO POLISH ===== */
-
-.home-hero {
-  background: #fffaf3;
-}
-
-/* Cover image - no burgundy showing around it */
-.home-hero-image {
-  display: block;
-  width: 100%;
-  margin: 0;
-  background: #fffaf3;
-}
-
-/* Text area */
-.home-hero-overlay {
-  text-align: center;
-  padding: 52px 28px 70px;
-  background: #fffaf3;
-}
-
-/* WELCOME TO */
-.home-hero .hero-kicker {
-  color: #b8872e;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 5px;
-  margin: 0 0 18px;
-}
-
-/* Main heading */
-.home-hero h1 {
-  font-family: "Playfair Display", serif;
-  color: #7b1e3a;
-  font-size: clamp(42px, 9vw, 62px);
-  line-height: 1.02;
-  letter-spacing: -1px;
-  max-width: 620px;
-  margin: 0 auto 22px;
-}
-
-/* Decorative gold line */
-.home-hero h1::after {
-  content: "";
-  display: block;
-  width: 70px;
-  height: 2px;
-  background: #d9a441;
-  margin: 22px auto 0;
-}
-
-/* Tagline */
-.home-hero .hero-tagline {
-  max-width: 560px;
-  margin: 0 auto 32px;
-  font-size: 19px;
-  line-height: 1.65;
-  font-weight: 500;
-  color: #49383f;
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  .home-hero-overlay {
-    padding: 44px 24px 60px;
+  .page-hero:has(+ .celebration-year) {
+    padding-bottom: 0 !important;
   }
 
-  .home-hero h1 {
-    font-size: 45px;
-    line-height: 1.05;
-  }
-
-  .home-hero .hero-tagline {
-    font-size: 18px;
-  }
-}
-@media (max-width: 600px) {
-
-  .home-hero-overlay {
-    padding-top: 30px !important;
-    padding-bottom: 38px !important;
-  }
-
-  .home-hero .hero-kicker {
-    margin-top: 0 !important;
-    margin-bottom: 16px !important;
-  }
-
-  .home-hero h1 {
-    margin-bottom: 18px !important;
-  }
-
-  .home-hero .hero-tagline {
-    margin-bottom: 26px !important;
-  }
-}
-@media (max-width: 600px) {
-  .home-hero h1 {
-    font-size: 38px !important;
-    line-height: 1.08 !important;
-  }
-}
-@media (max-width: 768px) {
-  .home-hero h1 {
-    font-size: 3.1rem !important;
-    line-height: 1.02 !important;
-  }
-
-  .hero-tagline {
-    font-size: 1.35rem !important;
-    line-height: 1.45 !important;
-  }
-}
-@media (max-width: 768px) {
-
-  .home-hero {
-    padding-bottom: 15px !important;
-    min-height: auto !important;
-  }
-
-  .home-hero-overlay {
+  .celebration-year {
+    padding-top: 20px !important;
     padding-bottom: 20px !important;
   }
 
-  .home-hero + .section {
-    padding-top: 25px !important;
-  }
-}
-@media (max-width: 768px) {
-  .home-hero .home-hero-overlay h1 {
-    font-size: 30px !important;
-    line-height: 1.1 !important;
-    max-width: 300px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+  .year-heading {
+    margin-bottom: 12px !important;
   }
 
-  .home-hero .hero-tagline {
-    font-size: 17px !important;
-    line-height: 1.45 !important;
-  }
-}
-@media (max-width: 768px) {
-  .home-hero-overlay {
-    padding-bottom: 28px !important;
+  .celebration-year .event-image-placeholder {
+    min-height: 90px !important;
   }
 
-  .home-hero + .section {
-    padding-top: 22px !important;
-  }
-}
-@media (max-width: 768px) {
-  .home-hero-overlay {
-    padding-top: 24px !important;
-  }
-}
-/* FINAL HOME HERO MOBILE SPACING */
-@media (max-width: 768px) {
-  .home-hero {
-    display: block !important;
-    min-height: 0 !important;
-    height: auto !important;
-    gap: 0 !important;
-    padding: 0 !important;
+  .celebration-year .event-card-content {
+    padding: 16px 18px !important;
   }
 
-  .home-hero-overlay {
-    margin: 0 !important;
-    padding: 22px 24px 28px !important;
-  }
-}
-/* Tighten hero to About Us gap */
-@media (max-width: 768px) {
-  .home-hero-overlay {
-    padding-bottom: 8px !important;
-  }
-
-  .home-hero + .section {
-    padding-top: 12px !important;
-  }
-}
-/* FINAL HERO HEIGHT TIGHTENING */
-@media (max-width: 768px) {
-
-  .home-hero-overlay {
-    padding-top: 32px !important;
-    padding-bottom: 24px !important;
-  }
-
-  .home-hero .hero-tagline {
-    margin-bottom: 22px !important;
-  }
-
-  .home-hero .hero-buttons {
-    margin-top: 0 !important;
-  }
-
-  .home-hero + .section {
-    padding-top: 18px !important;
-  }
-}
-/* HOME ABOUT HEADING - MOBILE */
-@media (max-width: 768px) {
-  .home-hero + .section .section-heading h2 {
-    font-size: 2rem !important;
-    line-height: 1.15 !important;
-  }
-}
-/* ===== HOME PAGE CARD COMPACTING ===== */
-@media (max-width: 768px) {
-
-  /* About feature cards */
-  .feature-card {
-    padding: 20px 22px !important;
-  }
-
-  .feature-card .feature-icon {
-    margin-bottom: 8px !important;
-  }
-
-  .feature-card h3 {
+  .celebration-year .event-card-content p {
     margin-bottom: 10px !important;
   }
 
-  .feature-card p {
-    margin-bottom: 0 !important;
-  }
-
-  /* Journey cards */
-  .year-preview-card {
-    padding: 20px 22px !important;
-  }
-
-  .year-preview-card h3 {
-    margin-bottom: 8px !important;
-  }
-
-  .year-preview-card p {
-    margin-bottom: 0 !important;
-  }
-
-  /* Diwali 2026 card */
-  .diwali-preview-card {
-    padding: 28px 24px !important;
+  .celebration-year .celebration-grid {
     gap: 12px !important;
   }
 
-  .diwali-preview-card h2 {
-    font-size: 1.8rem !important;
-  }
-
-  .diwali-preview-card p {
-    margin-bottom: 14px !important;
-  }
-
-  .diwali-symbol {
-    font-size: 3rem !important;
-    margin: 4px 0 0 !important;
-  }
-}
-/* DIWALI HOME CARD - COMPACT MOBILE */
-@media (max-width: 620px) {
-
-  .diwali-preview-card {
-    min-height: 0 !important;
-    height: auto !important;
-    padding: 28px 24px 30px !important;
-    display: block !important;
-  }
-
-  .diwali-preview-card h2 {
-    margin-bottom: 16px !important;
-  }
-
-  .diwali-preview-card p {
-    margin-bottom: 16px !important;
-  }
-
-  .diwali-preview-card .button {
-    margin-top: 6px !important;
-    margin-bottom: 18px !important;
-  }
-
-  .diwali-symbol {
-    display: block !important;
-    font-size: 2.2rem !important;
-    margin: 4px 0 0 !important;
-    line-height: 1 !important;
-  }
-}
-@media (max-width: 620px) {
-  .contact-highlight h2 {
-    font-size: 1.7rem !important;
-    line-height: 1.2 !important;
-  }
-}
-/* FINAL HOMEPAGE MOBILE POLISH */
-@media (max-width: 620px) {
-
-  /* Compact Diwali card */
   .diwali-preview-card {
     min-height: 0 !important;
     height: auto !important;
     padding: 26px 24px 28px !important;
   }
 
-  /* Move diya up */
-  .diwali-symbol {
-    font-size: 2rem !important;
-    margin: 0 0 12px !important;
-    line-height: 1 !important;
-    order: -1;
+  .diwali-preview-card h2,
+  .contact-highlight h2 {
+    font-size: 1.7rem !important;
+    line-height: 1.2 !important;
   }
 
   .diwali-preview-card .button {
@@ -1870,61 +1055,232 @@ p {
     margin-bottom: 0 !important;
   }
 
-  /* Reduce empty space in Stay Connected */
+  .diwali-symbol {
+    display: block !important;
+    font-size: 2rem !important;
+    margin: 0 0 12px !important;
+    line-height: 1 !important;
+    order: -1;
+  }
+
   .contact-preview {
     padding-top: 28px !important;
     padding-bottom: 32px !important;
   }
 
-  .contact-preview .button {
-    margin-bottom: 0 !important;
-  }
-
-  /* Bring footer closer */
   .contact-preview + .site-footer {
     margin-top: 0 !important;
   }
 }
-/* Compact About Us */
-.about-compact-card {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 22px;
-  padding: 8px 22px;
-  box-shadow: var(--shadow);
+
+/* =========================================
+   FINAL HOMEPAGE
+   One clean source of truth for home page
+========================================= */
+
+.home-hero {
+  display: block;
+  width: 100%;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #fffaf3;
 }
 
-.about-item {
+.home-hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.home-hero-overlay {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 38px 28px 48px;
+  text-align: center;
+  background: #fffaf3;
+}
+
+.home-hero .hero-kicker {
+  margin: 0 0 16px;
+  color: #b8872e;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+}
+
+.home-hero h1 {
+  max-width: 620px;
+  margin: 0 auto 20px;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  line-height: 1.05;
+  color: var(--primary);
+}
+
+.home-hero h1::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  margin: 22px auto 0;
+  background: var(--accent);
+}
+
+.home-hero .hero-tagline {
+  max-width: 580px;
+  margin: 0 auto 28px;
+  font-size: 1.15rem;
+  line-height: 1.55;
+  font-weight: 500;
+  color: #49383f;
+}
+
+.hero-highlights {
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+  max-width: 600px;
+  margin: 30px auto 28px;
+}
+
+.hero-highlight {
+  flex: 1;
+  text-align: center;
+  color: var(--text);
+}
+
+.hero-highlight span {
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding: 18px 0;
+  justify-content: center;
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 9px;
+  border-radius: 50%;
+  background: #f8ebe7;
+  font-size: 29px;
 }
 
-.about-item + .about-item {
-  border-top: 1px solid var(--border);
-}
-
-.about-item > span {
-  font-size: 28px;
-  width: 38px;
-  flex-shrink: 0;
-  text-align: center;
-}
-
-.about-item h3 {
-  margin: 0 0 3px;
-  font-family: "Playfair Display", serif;
-  color: var(--primary);
-  font-size: 20px;
-}
-
-.about-item p {
+.hero-highlight p {
   margin: 0;
-  font-size: 15px;
-  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 600;
 }
 
-.home-about {
-  padding-bottom: 42px;
+.home-hero .hero-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.home-hero .hero-buttons a {
+  width: min(100%, 650px);
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.home-hero .btn-secondary {
+  background: white;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.home-about,
+.home-celebrations {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.home-about .section-heading,
+.home-celebrations .section-heading {
+  margin-bottom: 0;
+}
+
+.home-about .section-heading h2,
+.home-celebrations .section-heading h2 {
+  margin-bottom: 14px;
+}
+
+.home-about .section-heading > p:last-child,
+.home-celebrations .section-heading > p:not(.eyebrow) {
+  margin-bottom: 0;
+}
+
+.home-celebrations .button {
+  margin-top: 24px;
+}
+
+@media (max-width: 620px) {
+  .home-hero-overlay {
+    padding: 28px 28px 36px;
+  }
+
+  .home-hero .hero-kicker {
+    margin-bottom: 15px;
+    font-size: 0.82rem;
+  }
+
+  .home-hero h1 {
+    max-width: 330px;
+    font-size: 2.4rem;
+    line-height: 1.07;
+  }
+
+  .home-hero .hero-tagline {
+    max-width: 340px;
+    margin-bottom: 22px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .hero-highlights {
+    gap: 10px;
+    margin: 24px auto 24px;
+  }
+
+  .hero-highlight span {
+    width: 66px;
+    height: 66px;
+    font-size: 25px;
+  }
+
+  .hero-highlight p {
+    font-size: 0.92rem;
+  }
+
+  .home-hero .hero-buttons a {
+    width: 100%;
+  }
+
+  .home-about,
+  .home-celebrations {
+    padding-top: 34px !important;
+    padding-bottom: 34px !important;
+  }
+
+  .home-about .section-heading,
+  .home-celebrations .section-heading {
+    margin-bottom: 0 !important;
+  }
+
+  .home-about .section-heading h2,
+  .home-celebrations .section-heading h2 {
+    font-size: 2rem !important;
+    line-height: 1.15 !important;
+    margin-bottom: 14px !important;
+  }
+
+  .home-about .section-heading p,
+  .home-celebrations .section-heading p {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .home-celebrations .button {
+    margin-top: 22px;
+  }
 }
