@@ -1467,3 +1467,8 @@ p {
   }
 
 }
+@media (max-width: 620px) {
+  main > section.home-celebrations {
+    padding-top: 28px !important;
+  }
+}
