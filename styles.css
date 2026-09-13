@@ -1702,3 +1702,8 @@ p {
     padding-top: 22px !important;
   }
 }
+@media (max-width: 768px) {
+  .home-hero-overlay {
+    padding-top: 24px !important;
+  }
+}
