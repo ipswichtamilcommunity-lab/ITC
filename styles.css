@@ -1707,3 +1707,18 @@ p {
     padding-top: 24px !important;
   }
 }
+/* FINAL HOME HERO MOBILE SPACING */
+@media (max-width: 768px) {
+  .home-hero {
+    display: block !important;
+    min-height: 0 !important;
+    height: auto !important;
+    gap: 0 !important;
+    padding: 0 !important;
+  }
+
+  .home-hero-overlay {
+    margin: 0 !important;
+    padding: 22px 24px 28px !important;
+  }
+}
