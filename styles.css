@@ -1550,3 +1550,9 @@ p {
     margin-top: 8px !important;
   }
 }
+@media (max-width: 620px) {
+  .celebration-year .year-heading h2 {
+    font-size: 1.75rem !important;
+    line-height: 1.15 !important;
+  }
+}
