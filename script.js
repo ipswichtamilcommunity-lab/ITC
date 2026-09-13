@@ -245,4 +245,57 @@ if (menuToggle && mainNav) {
       });
     });
 }
+// ==========================================
+// FEEDBACK FORM
+// ==========================================
 
+const feedbackForm = document.getElementById("feedbackForm");
+
+if (feedbackForm) {
+feedbackForm.addEventListener("submit", async (event) => {
+event.preventDefault();
+
+if (!feedbackForm.checkValidity()) {  
+  feedbackForm.reportValidity();  
+  return;  
+}  
+
+const submitButton =  
+  feedbackForm.querySelector('button[type="submit"]');  
+
+const originalButtonText = submitButton.textContent;  
+
+submitButton.disabled = true;  
+submitButton.textContent = "Sending...";  
+
+const formData = new FormData(feedbackForm);  
+
+try {  
+  const response = await fetch(  
+    "https://script.google.com/macros/s/AKfycbwFcgJ6kFL9FWpxPbkaG-jwYw_-KkuyzImi64ITbLFRM1Z5qRNP8Z1HLezlBWKLc-AC0g/exec",  
+    {  
+      method: "POST",  
+      body: formData  
+    }  
+  );  
+
+  const result = await response.text();  
+
+  if (result.trim() === "success") {  
+    alert("Thank you. Your feedback has been received.");  
+    feedbackForm.reset();  
+  } else {  
+    alert("Something went wrong. Please try again.");  
+  }  
+
+} catch (error) {  
+  console.error("Feedback submission error:", error);  
+  alert("Unable to send feedback. Please try again.");  
+
+} finally {  
+  submitButton.disabled = false;  
+  submitButton.textContent = originalButtonText;  
+}
+
+});
+}
