@@ -1885,54 +1885,46 @@ p {
     margin-top: 0 !important;
   }
 }
-/* Compact About Us - Homepage */
-.home-about {
-  padding-top: 45px;
-  padding-bottom: 45px;
-}
-
-.home-about .section-heading {
-  margin-bottom: 28px;
-}
-
-.about-compact {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-
-.about-compact > div {
+/* Compact About Us */
+.about-compact-card {
   background: #fff;
   border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 20px 16px;
+  border-radius: 22px;
+  padding: 8px 22px;
+  box-shadow: var(--shadow);
+}
+
+.about-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0;
+}
+
+.about-item + .about-item {
+  border-top: 1px solid var(--border);
+}
+
+.about-item > span {
+  font-size: 28px;
+  width: 38px;
+  flex-shrink: 0;
   text-align: center;
 }
 
-.about-compact span {
-  display: block;
-  font-size: 26px;
-  margin-bottom: 8px;
-}
-
-.about-compact strong {
+.about-item h3 {
+  margin: 0 0 3px;
   font-family: "Playfair Display", serif;
   color: var(--primary);
-  font-size: 18px;
+  font-size: 20px;
 }
 
-@media (max-width: 700px) {
-  .about-compact {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
+.about-item p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--muted);
+}
 
-  .about-compact > div {
-    padding: 14px 16px;
-  }
-
-  .about-compact span {
-    display: inline;
-    margin-right: 8px;
-  }
+.home-about {
+  padding-bottom: 42px;
 }
