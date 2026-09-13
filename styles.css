@@ -1759,3 +1759,55 @@ p {
     line-height: 1.15 !important;
   }
 }
+/* ===== HOME PAGE CARD COMPACTING ===== */
+@media (max-width: 768px) {
+
+  /* About feature cards */
+  .feature-card {
+    padding: 20px 22px !important;
+  }
+
+  .feature-card .feature-icon {
+    margin-bottom: 8px !important;
+  }
+
+  .feature-card h3 {
+    margin-bottom: 10px !important;
+  }
+
+  .feature-card p {
+    margin-bottom: 0 !important;
+  }
+
+  /* Journey cards */
+  .year-preview-card {
+    padding: 20px 22px !important;
+  }
+
+  .year-preview-card h3 {
+    margin-bottom: 8px !important;
+  }
+
+  .year-preview-card p {
+    margin-bottom: 0 !important;
+  }
+
+  /* Diwali 2026 card */
+  .diwali-preview-card {
+    padding: 28px 24px !important;
+    gap: 12px !important;
+  }
+
+  .diwali-preview-card h2 {
+    font-size: 1.8rem !important;
+  }
+
+  .diwali-preview-card p {
+    margin-bottom: 14px !important;
+  }
+
+  .diwali-symbol {
+    font-size: 3rem !important;
+    margin: 4px 0 0 !important;
+  }
+}
