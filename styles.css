@@ -1420,3 +1420,36 @@ p {
     margin-top: 0 !important;
   }
 }
+/* FINAL HOME SECTION GAP OVERRIDE */
+@media (max-width: 620px) {
+
+  main > section.home-about {
+    padding-top: 22px !important;
+    padding-bottom: 0 !important;
+    min-height: 0 !important;
+  }
+
+  main > section.home-celebrations {
+    padding-top: 0 !important;
+    padding-bottom: 12px !important;
+    min-height: 0 !important;
+  }
+
+  .home-about .section-heading {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .home-celebrations .section-heading {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .home-celebrations .eyebrow {
+    margin-top: 8px !important;
+  }
+
+  main > section.gallery-preview {
+    padding-top: 12px !important;
+  }
+}
