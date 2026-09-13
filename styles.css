@@ -1430,7 +1430,7 @@ p {
   }
 
   main > section.home-celebrations {
-    padding-top: 0 !important;
+    padding-top: 18px !important;
     padding-bottom: 12px !important;
     min-height: 0 !important;
   }
