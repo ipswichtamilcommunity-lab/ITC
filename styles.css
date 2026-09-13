@@ -1847,3 +1847,41 @@ p {
     line-height: 1.2 !important;
   }
 }
+/* FINAL HOMEPAGE MOBILE POLISH */
+@media (max-width: 620px) {
+
+  /* Compact Diwali card */
+  .diwali-preview-card {
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 26px 24px 28px !important;
+  }
+
+  /* Move diya up */
+  .diwali-symbol {
+    font-size: 2rem !important;
+    margin: 0 0 12px !important;
+    line-height: 1 !important;
+    order: -1;
+  }
+
+  .diwali-preview-card .button {
+    margin-top: 8px !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Reduce empty space in Stay Connected */
+  .contact-preview {
+    padding-top: 28px !important;
+    padding-bottom: 32px !important;
+  }
+
+  .contact-preview .button {
+    margin-bottom: 0 !important;
+  }
+
+  /* Bring footer closer */
+  .contact-preview + .site-footer {
+    margin-top: 0 !important;
+  }
+}
