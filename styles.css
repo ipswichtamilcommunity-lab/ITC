@@ -1254,3 +1254,40 @@ p {
     padding: 26px 22px !important;
   }
 }
+/* HOME PAGE - compact mobile layout */
+@media (max-width: 620px) {
+
+  /* Smaller section headings */
+  .section-heading h2 {
+    font-size: 1.7rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .home-hero-card h2,
+  .diwali-preview-card h2 {
+    font-size: 1.7rem !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Reduce large gaps between Home sections */
+  .home-hero {
+    padding-bottom: 20px !important;
+  }
+
+  .section {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+  }
+
+  .section-heading {
+    margin-bottom: 22px !important;
+  }
+
+  .home-celebrations,
+  .gallery-preview,
+  .diwali-preview,
+  .contact-preview {
+    padding-top: 32px !important;
+  }
+}
