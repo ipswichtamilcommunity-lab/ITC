@@ -1664,3 +1664,14 @@ p {
     line-height: 1.45 !important;
   }
 }
+/* Reduce space between hero and About Us */
+@media (max-width: 768px) {
+  .home-hero {
+    padding-bottom: 45px !important;
+    min-height: auto !important;
+  }
+
+  .home-hero + .section {
+    padding-top: 45px !important;
+  }
+}
