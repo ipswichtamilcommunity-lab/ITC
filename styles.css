@@ -1466,3 +1466,16 @@ p {
   margin-top: 20px;
   margin-bottom: 45px;
 }
+/* TIGHTER HOMEPAGE SECTION SPACING */
+.home-about {
+  padding-bottom: 20px;
+}
+
+.home-celebrations {
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.home-gallery {
+  padding-top: 25px;
+}
