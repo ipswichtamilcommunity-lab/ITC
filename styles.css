@@ -1472,3 +1472,8 @@ p {
     padding-top: 28px !important;
   }
 }
+@media (max-width: 620px) {
+  main > section.gallery-preview {
+    padding-top: 30px !important;
+  }
+}
