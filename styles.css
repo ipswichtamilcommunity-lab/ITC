@@ -1339,3 +1339,70 @@ p {
     margin-top: 14px !important;
   }
 }
+/* FINAL MOBILE GAP + FONT FIX */
+@media (max-width: 620px) {
+
+  /* About / Journey / Gallery headings */
+  .home-about h2,
+  .home-celebrations h2,
+  .gallery-preview h2,
+  .contact-preview h2 {
+    font-size: 1.65rem !important;
+    line-height: 1.15 !important;
+  }
+
+  /* Normal paragraph size */
+  .home-about p,
+  .home-celebrations p,
+  .gallery-preview p,
+  .contact-preview p {
+    font-size: 1rem !important;
+    line-height: 1.55 !important;
+  }
+
+  /* All homepage sections closer together */
+  main > .section {
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+  }
+
+  /* Journey -> Gallery */
+  .home-celebrations {
+    padding-bottom: 22px !important;
+  }
+
+  .gallery-preview {
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+  }
+
+  /* Gallery button */
+  .gallery-preview .centre-button {
+    margin-top: 16px !important;
+  }
+
+  /* Gallery -> Diwali */
+  .diwali-preview {
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+  }
+
+  /* Diwali -> Stay Connected */
+  .contact-preview {
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+  }
+
+  /* Remove giant space before footer */
+  .site-footer {
+    margin-top: 0 !important;
+  }
+
+  /* Smaller Journey button */
+  .home-celebrations .button {
+    margin-top: 16px !important;
+    padding: 11px 18px !important;
+    min-height: 44px !important;
+    font-size: 0.95rem !important;
+  }
+}
