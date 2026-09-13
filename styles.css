@@ -1450,3 +1450,19 @@ p {
     margin-bottom: 0 !important;
   }
 }
+/* HOMEPAGE SPACING ONLY */
+.home-about,
+.home-celebrations {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.home-gallery {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.diwali-preview {
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
