@@ -1477,3 +1477,17 @@ p {
     padding-top:18px !important;
   }
 }
+@media (max-width: 620px) {
+
+  main > section.home-celebrations {
+    padding-bottom: 8px !important;
+  }
+
+  main > section.gallery-preview {
+    padding-top: 8px !important;
+  }
+
+  .gallery-preview .section-heading {
+    margin-top: 0 !important;
+  }
+}
