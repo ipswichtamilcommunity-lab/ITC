@@ -1557,13 +1557,26 @@ p {
   }
 }
 /* =========================================
-   DIWALI EVENT PAGE MOBILE SPACING FIX
+   DIWALI EVENT PAGE MOBILE FINAL SPACING
 ========================================= */
 
 @media (max-width: 620px) {
 
-  .diwali-event-page {
-    padding-top: 12px !important;
+  /* Remove space below the Diwali intro */
+  .page-hero:has(+ .diwali-event-page) {
+    padding-bottom: 0 !important;
   }
 
+  .page-hero:has(+ .diwali-event-page) > p:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* Bring poster closer to intro */
+  .diwali-event-page {
+    padding-top: 20px !important;
+  }
+
+  .diwali-event-page .event-poster {
+    margin-top: 0 !important;
+  }
 }
