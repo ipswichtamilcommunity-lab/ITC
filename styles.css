@@ -1291,3 +1291,47 @@ p {
     padding-top: 32px !important;
   }
 }
+/* FINAL HOME MOBILE SPACING FIX */
+@media (max-width: 620px) {
+
+  /* Make all home sections compact */
+  main > .section {
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+  }
+
+  /* Remove extra gaps between consecutive sections */
+  main > .section + .section {
+    margin-top: 0 !important;
+  }
+
+  /* Heading spacing */
+  .section-heading {
+    margin-bottom: 18px !important;
+  }
+
+  .section-heading h2 {
+    font-size: 1.7rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* Journey cards */
+  .year-preview-grid {
+    gap: 14px !important;
+  }
+
+  .centre-button {
+    margin-top: 18px !important;
+  }
+
+  /* Specifically remove excess space before Gallery */
+  .gallery-preview {
+    padding-top: 18px !important;
+  }
+
+  /* Reduce space after About */
+  .home-celebrations {
+    padding-top: 18px !important;
+  }
+}
