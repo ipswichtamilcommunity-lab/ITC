@@ -1420,19 +1420,16 @@ p {
     margin-top: 0 !important;
   }
 }
-/* FINAL HOME SECTION GAP OVERRIDE */
+/* =========================================
+   FINAL HOMEPAGE MOBILE OVERRIDES
+========================================= */
+
 @media (max-width: 620px) {
 
-  main > section.home-about {
+  /* ABOUT */
+  main > .section.home-about {
     padding-top: 22px !important;
     padding-bottom: 0 !important;
-    min-height: 0 !important;
-  }
-
-  main > section.home-celebrations {
-    padding-top: 18px !important;
-    padding-bottom: 12px !important;
-    min-height: 0 !important;
   }
 
   .home-about .section-heading {
@@ -1440,22 +1437,34 @@ p {
     padding: 0 !important;
   }
 
+  /* JOURNEY */
+  main > .section.home-celebrations {
+    padding-top: 28px !important;
+    padding-bottom: 4px !important;
+  }
+
   .home-celebrations .section-heading {
     margin: 0 !important;
     padding: 0 !important;
   }
 
-  .home-celebrations .eyebrow {
-    margin-top: 8px !important;
+  .home-celebrations .button {
+    margin-top: 16px !important;
+    margin-bottom: 0 !important;
   }
 
-  main > section.gallery-preview {
-    padding-top: 12px !important;
+  /* MEMORIES / GALLERY */
+  main > .section.gallery-preview {
+    margin-top: 0 !important;
+    padding-top: 6px !important;
+    padding-bottom: 22px !important;
   }
-}
-/* HOMEPAGE MOBILE HEADING SIZE - FINAL */
-@media (max-width: 620px) {
 
+  .gallery-preview .section-heading {
+    margin-top: 0 !important;
+  }
+
+  /* HOMEPAGE HEADINGS */
   .home-about .section-heading h2,
   .home-celebrations .section-heading h2,
   .gallery-preview .section-heading h2,
@@ -1465,50 +1474,4 @@ p {
     line-height: 1.2 !important;
     font-weight: 700 !important;
   }
-
-}
-@media (max-width: 620px) {
-  main > section.home-celebrations {
-    padding-top: 28px !important;
-  }
-}
-@media (max-width: 620px) {
-  main > section.gallery-preview {
-    padding-top:18px !important;
-  }
-}
-@media (max-width: 620px) {
-
-  main > section.home-celebrations {
-    padding-bottom: 8px !important;
-  }
-
-  main > section.gallery-preview {
-    padding-top: 8px !important;
-  }
-
-  .gallery-preview .section-heading {
-    margin-top: 0 !important;
-  }
-}
-@media (max-width: 620px) {
-
-  .home-celebrations .button,
-  .home-celebrations .centre-button {
-    margin-bottom: 0 !important;
-  }
-
-  .home-celebrations {
-    margin-bottom: 0 !important;
-  }
-
-  main > section.home-celebrations {
-    padding-bottom: 0 !important;
-  }
-
-  main > section.gallery-preview {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-
 }
