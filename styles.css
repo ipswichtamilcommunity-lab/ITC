@@ -1679,19 +1679,17 @@ p {
     padding-top: 25px !important;
   }
 }
-/* FINAL MOBILE HERO SIZE */
 @media (max-width: 768px) {
-
   .home-hero .home-hero-overlay h1 {
-    font-size: 34px !important;
-    line-height: 1.08 !important;
-    max-width: 340px !important;
+    font-size: 30px !important;
+    line-height: 1.1 !important;
+    max-width: 300px !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
   .home-hero .hero-tagline {
-    font-size: 18px !important;
-    line-height: 1.5 !important;
+    font-size: 17px !important;
+    line-height: 1.45 !important;
   }
 }
