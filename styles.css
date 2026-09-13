@@ -1491,3 +1491,24 @@ p {
     margin-top: 0 !important;
   }
 }
+@media (max-width: 620px) {
+
+  .home-celebrations .button,
+  .home-celebrations .centre-button {
+    margin-bottom: 0 !important;
+  }
+
+  .home-celebrations {
+    margin-bottom: 0 !important;
+  }
+
+  main > section.home-celebrations {
+    padding-bottom: 0 !important;
+  }
+
+  main > section.gallery-preview {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+}
