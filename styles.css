@@ -1693,3 +1693,12 @@ p {
     line-height: 1.45 !important;
   }
 }
+@media (max-width: 768px) {
+  .home-hero-overlay {
+    padding-bottom: 28px !important;
+  }
+
+  .home-hero + .section {
+    padding-top: 22px !important;
+  }
+}
